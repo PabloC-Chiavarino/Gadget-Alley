@@ -1,0 +1,650 @@
+/*STYLES GENERALES*/
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(221, 221, 221);
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+header {
+    width: 100%;
+    height: 160px;
+    background-image: linear-gradient(to right, black, rgb(77, 76, 76));
+}
+
+.headertitle {
+    color: whitesmoke;
+    margin: 5px 50px;
+    position: absolute;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 90px;    
+    text-shadow: 1px 1px 10px black, 1px 1px 10px rgb(211, 211, 211);
+}           
+
+.navbar {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    position: sticky;
+    top: 0;
+    height:30px;
+    width: fit-content;
+    margin-top: -70px;
+    margin-left: 10px;
+    background-color:rgb(221, 221, 221);
+} 
+
+nav ul li a {
+    font-size: 23px;
+    color:rgba(0, 0, 0, 0.900);
+    text-decoration: none;
+    padding-inline: 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+
+.eslogan {
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Splash', cursive;
+    font-size: 25px;
+    letter-spacing: 3px;    
+    display: flex;              
+    justify-content: end;
+    background-color:rgb(221, 221, 221);
+    text-shadow: 0px 1px 10px black;
+}
+
+
+#searcher {
+    width: 250px;
+    height: 25px;
+    margin-top: 180px;
+    margin-left: 80%;
+    position: absolute;
+    padding-left: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: end;
+    text-align-last: right;
+}
+
+
+
+
+.btn_display {
+    display: flex;
+}
+
+.btn_style {
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(0, 0, 0, 0.900);
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 3px;
+    font-size: 20px;    
+    height: 45px;
+    width: 160px;
+    margin-inline: 7px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: all 0.5s;
+}
+
+.btn_style:hover {
+    background-color: rgb(175, 175, 175);
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+.grid_btn_display {
+    display: flex;
+}
+
+.grid_btn_style {
+    color: black;
+    letter-spacing: 1px;
+    background-color: rgb(253, 174, 71);
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 2px;
+    font-size: 17px;    
+    height: 40px;
+    width: 110px;
+    margin-inline: 7px;
+    margin-top: -20px;
+    margin-bottom: 140px;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 2px;
+    transition: all 0.5s;
+}
+
+.grid_btn_style:hover {
+    background-color: rgb(253, 205, 143);
+}
+
+
+.grid_img {
+    border: 3px groove black;
+    width: 250px;
+    height: 250px;
+    margin-top: 80px;        
+}
+
+.common_grid_style {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+
+
+.maintitle_second {
+    margin-top: 180px;
+    margin-left: 230px;
+    margin-bottom: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    background-color: lightgrey;
+    color: black;
+    padding-left: 6px;
+    width: 100%;
+    letter-spacing: 2px;
+    border: 2px groove black;
+}
+
+.maintitle_third {
+    margin-left: 360px;
+    margin-bottom: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    background-color: rgb(114, 113, 113);
+    color: black;
+    padding-left: 6px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+
+.content_subtitle {
+    font-size: 25px;
+    position: absolute;
+    text-decoration: underline grey;
+    letter-spacing: 1px;
+}
+
+
+
+/*FOOTER*/
+
+
+.footer__style {
+    margin-top: 200px;
+    height: 110px;
+    color: rgb(163, 158, 158);
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.footer__title {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.footer__subtitle {
+    margin-right:130px;
+    margin-top: 9px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.footer__social {
+    display:flex;
+    justify-content: end;
+}
+
+footer article a {
+    margin-inline: 20px;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.footer__icons:hover {
+    height: 42px;
+    width: 42px;
+}
+
+
+
+
+
+/*INDEX*/
+
+.maintitle {
+    margin: 180px 0px 80px 0px;
+    padding-top: 10px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    letter-spacing: 6px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(180, 179, 179);
+}
+
+.content_index {
+    background-image: linear-gradient(to bottom, rgb(221, 221, 221), white);
+    color: rgb(0, 0, 0, 0.900); 
+    font-family: 'Bebas Neue', cursive;
+    font-size: medium;
+    letter-spacing: 1px;
+    padding: 20px;
+    display: grid;
+    gap:50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "first first"
+    "second third";
+}
+
+.content_subtitle_index {
+    font-size: 30px;
+    position: absolute;
+    text-decoration: underline grey;
+}   
+
+.first {
+    grid-area: first;
+    font-size: 25px;
+    display: flex;
+    gap: 100px;
+}
+
+.first_2 {
+    align-items: end;
+    margin-top: 150px;
+}   
+
+.firstIMG {
+    width: 420px;
+    height: 370px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.second { 
+    grid-area: second;
+    margin-top: -50px;
+    margin-right: 40px;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondIMG {
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.third {
+    grid-area: third;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thirdIMG {
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*STREET*/
+
+
+
+.content_street_header {
+    width: 100%;
+    height: 330px;
+    background-image: url(../assets/img/smartwrist_cut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    margin-top:180px;
+    margin-bottom: 100px;
+    color: rgba(0, 0, 0, 0.900)
+}
+
+.content_street {
+    color: rgb(0, 0, 0, 0.900);
+    font-family: 'Bebas Neue', cursive;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+
+
+
+
+
+
+
+/*OUTDOOR*/
+
+.content_outdoor_header {
+    width: 100%;
+    height: 330px;
+    background-image: url(../assets/img/silhouette_drone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    margin-top:180px;
+    margin-bottom: 100px;
+    color: rgba(0, 0, 0, 0.900)
+}
+
+.content_outdoor {
+    color: rgb(0, 0, 0, 0.900);
+    font-family: 'Bebas Neue', cursive;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+
+
+
+
+/*REVIEWS*/
+
+
+.content_reviews {
+    color: rgb(0, 0, 0, 0.900);
+    font-family: 'Bebas Neue', cursive;
+    font-size: medium;
+    padding: 30px;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 0px;
+}
+
+.reviews_grid_style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframes_reviews {
+    width: 400px;
+    height: 220px;
+    margin: 70px 0px 25px 0px;
+    border: 5px groove rgb(230, 230, 230);
+    border-radius: 3px;
+}
+
+
+
+
+/*CONTACTO*/
+
+
+form {
+    font-family: "Bebas Neue", cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 600px;
+    width: 450PX;
+    border: 4px solid rgb(70, 70, 70);
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 8px;
+    background-image: linear-gradient(to bottom, rgb(75, 75, 75), white);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -12px;
+}
+
+
+.contact_title {
+    font-size: 22px; 
+    display: flex;
+    justify-content: center;
+}
+
+main form input {
+    height: 25px;
+}
+
+main form button {
+    height: 30px;
+    font-family: "Bebas Neue",cursive;
+    font-size: 18px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+}   
+
+.contact_main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactIMG {
+    height: 600px;
+    width: 70%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+
+/***responsive***/
+
+/**gral**/
+
+@media only screen and (max-width: 576px) {
+    
+    .headertitle {
+        margin: 20px 30px;
+        font-size: 80px; 
+    }
+
+    .navbar {
+        margin: 0px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding-inline: 18px;
+    }
+
+    .eslogan {
+        position: absolute;
+        margin: 60px 0px 0px 250px;
+        font-size: 20px;
+    }
+
+    #searcher {
+        margin-left: 55%;
+    }
+
+
+/*footer*/
+
+.footer__style {
+    height: 114px;
+}
+
+.footer__subtitle {
+    margin-right: 40px;
+    margin-top: 25px;
+}
+
+footer article a {
+    margin-inline: 12px;
+}
+
+/*index*/
+
+.content_index {
+    gap: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+        "first" 
+        "second" 
+        "third"
+        ;
+}
+
+.first {
+    flex-direction: column;
+    font-size   : 20px;
+    gap: 0px;
+    align-items: center;
+}
+
+.first_2 {
+    margin: 60px;
+}
+
+.btn_display {
+    justify-content: center;
+}
+
+.second {
+    margin-right: 0px;
+}
+
+.third {
+    margin-top: -200px;
+    margin-left: 0px;
+}
+
+.maintitle_second {
+    margin-top: -220px;
+    margin-left: 150px;
+}
+
+
+
+/*street*/
+
+.content_street_header {
+    height: 280px;
+}
+
+.content_street {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+
+.content_subtitle {
+    font-size: 30px;
+}
+
+.grid_img {
+    width: 290px;
+    height: 270px;
+}
+
+.grid_btn_style {
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+
+
+/*outdoor*/
+
+
+.content_outdoor_header {
+    height: 280px;
+}
+
+
+.content_outdoor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+
+
+
+/*reviews*/
+
+.content_reviews {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.maintitle_second_mobile {
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.maintitle_third_mobile{
+    margin-left: 180px;    
+}
+
+
+/*contacto*/
+
+.contact_main {
+    flex-direction: column-reverse;
+}
+
+.contactIMG {
+    height: 280px;
+    width: 100%;
+}
+
+form {
+    width: 520px;
+}
+
+
+}
