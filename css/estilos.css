@@ -1,5 +1,11 @@
-/*STYLES GENERALES*/
+/*animaciones*/
 
+.animate__fadeInLeftBig {
+    animation-duration: 2.5s;
+}
+
+
+/*STYLES GENERALES*/
 
 *{
     margin: 0%;
