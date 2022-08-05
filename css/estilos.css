@@ -4,6 +4,11 @@
     animation-duration: 2.5s;
 }
 
+.animate__heartBeat {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
 
 /*STYLES GENERALES*/
 
@@ -215,7 +220,7 @@ nav ul {
 
 .footer__subtitle {
     margin-right:130px;
-    margin-top: 9px;
+    margin-top: -20px;
     font-size: 17px;
     letter-spacing: 2px;
 }
