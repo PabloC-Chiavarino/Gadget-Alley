@@ -25,15 +25,18 @@
     
     <h2 class="eslogan animate__animated animate__fadeInLeftBig">..tu compañero en la rutina</h2>
 
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link active" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/outdoor.html">Outdoor</a>
+                        <a class="nav-link active" href="../pages/outdoor.html">Outdoor</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="../pages/reviews.html">Reviews</a>
@@ -42,63 +45,88 @@
                         <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-            </div>
         </div>
+            </div>
     </nav>
-    
 
     <main>
         <h3 class="content_street_header">STREET MOVEMENT</h3>
-        <section class="content_street">
-            <article class="common_grid_style">
-                <p class="content_subtitle">GALAXY WATCH 4</p>
-                <img class="grid_img"src="../assets/img/watch4grid.png" alt="">
-            <div class="grid_btn_display">
-                <button class="grid_btn_style">COMPRAR</button>
-                <button class="grid_btn_style">Conocé más</button>
-            </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">MI BAND 7</p>
-                <img class= "grid_img"src="../assets/img/miband7grid.png" alt="">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">MI BAND 6</p>
-                <img class= "grid_img"src="../assets/img/miband6grid.png" alt="">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">AMAZFIT GTR 2</p>
-                <img class= "grid_img"src="../assets/img/gtr2grid.png" alt="">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">AMAZFIT GTS 2 MINI</p>
-                <img class= "grid_img"src="../assets/img/GTS2minigrid.png" alt="">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">AMAZFIT GTS 2</p>
-                <img class= "grid_img"src="../assets/img/gts2grid.png" alt="">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-        </section>
+        <div class="flex-container">
+            <section class="content_street">
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/watch4grid.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GALAXY WATCH 4</h5>
+                            <p class="card-text">El Galaxy Watch4 es el primer smartwatch con Wear OS Powered by Samsung que te permite acceder fácilmente a tus aplicaciones favoritas desde tu muñeca.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/miband7grid.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">MI BAND 7</h5>
+                            <p class="card-text">La nueva Mi Band 7 cuenta con una pantalla significativamente más grande que su predecesora hdndo una mejor experienia en general.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                    </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/miband6grid.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">MI BAND 6</h5>
+                            <p class="card-text">La pulsera Mi Smart Band 6 con una pantalla de 1,56 Pulgadas añade cinco nuevos modos de actividad, que se unen a los otros que ya estaban presentes.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/gtr2grid.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AMAZFIT GTR 2</h5>
+                            <p class="card-text">La gran pantalla de alta definición AMOLED con una densidad de píxeles de 326 ppp es nítida y brillante, tanto para ver la hora como para usar cualquiera de tus aplicaciones favoritas.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/GTS2minigrid.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AMAZFIT GTS 2 MINI</h5>
+                            <p class="card-text">El Amazfit GTS 2 Mini es un poco más pequeño que el modelo normal, montando una pantalla AMOLED de 1,56 pulgadas y resolución de 354 x 306 píxeles.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                    </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/gts2grid.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AMAZFIT GTS 2</h5>
+                            <p class="card-text">El Amazfit GTS 2 cuenta con el último sensor de alta precisión BioTracker 2 PPG. Gracias al potente motor sensor, el reloj es capaz de lograr una verdadera protección de la salud.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>    
+            </section>   
+        </div>    
     </main>
 
     <footer class="footer__style">

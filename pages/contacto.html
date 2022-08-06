@@ -26,41 +26,44 @@
     <h2 class="eslogan animate__animated animate__fadeInLeftBig">..tu compañero en la rutina</h2>
     
 
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link active" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="../pages/street.html">Street</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/outdoor.html">Outdoor</a>
+                        <a class="nav-link active" href="../pages/outdoor.html">Outdoor</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="../pages/reviews.html">Reviews</a>
                     </li>
                 </ul>
         </div>
-        </div>
+            </div>
     </nav>
     
 
     <main>
         <h3 class="maintitle_second maintitle_second_mobile">CONTACTO</h3>
-        <section class="contact_main">
+        <section class="contact_main container_fluid">
             <form action="dataprocess.php" name="contacto" method="post">
                 <legend class="contact_title">¡Contactanos!</legend>
                 <label>Nombre:</label>
-                <input type="text" name="nombre" placeholder="tu nombre" required>
+                <input class= "form-control" type="text" name="nombre" placeholder="tu nombre" required>
                 
                 <label>Apellido:</label>
-                <input type="text" name="nombre" placeholder="tu apellido" required>
+                <input class= "form-control" type="text" name="nombre" placeholder="tu apellido" required>
                 
                 <label>Email:</label>
-                <input type="email" name="nombre" placeholder="tu email" required>
+                <input class= "form-control" type="email" name="nombre" placeholder="tu email" required>
                 
                 <button type="submit">Enviar</button>
                 <button type="reset">Borrar formulario</button>

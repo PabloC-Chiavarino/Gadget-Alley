@@ -26,15 +26,18 @@
     
     <h2 class="eslogan animate__animated animate__fadeInLeftBig">..tu compañero en la rutina</h2>
 
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link active" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/street.html">Street</a>
+                        <a class="nav-link active" href="../pages/street.html">Street</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="../pages/reviews.html">Reviews</a>
@@ -43,47 +46,68 @@
                         <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-            </div>
         </div>
+            </div>
     </nav>
     
 
     <main>
         <h3 class="content_outdoor_header">OUTDOOR & LIFE STYLE</h3>
-        <section class="content_outdoor">
-            <article class="common_grid_style">
-                <p class="content_subtitle">Drone Daming DM107s</p>
-                <img class="grid_img" src="../assets/img/droneDM107s.png">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">SOLAR POWER BANK STYBBA 6000 mAh</p>
-                <img class="grid_img" src="../assets/img/Stybba6000mAh.png">
-                <div class="grid_btn_display">    
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">GO PRO HERO 10 BLACK</p>
-                <img class="grid_img" src="../assets/img/HERO10.png">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-            <article class="common_grid_style">
-                <p class="content_subtitle">DRONE DJI MAVIC MINI 2</p>
-                <img class="grid_img" src="../assets/img/DJIMini2.png">
-                <div class="grid_btn_display">
-                    <button class="grid_btn_style">COMPRAR</button>
-                    <button class="grid_btn_style">Conocé más</button>
-                </div>
-            </article>
-        </section>
+        <div class="flex-container">
+            <section class="content_outdoor">
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/Stybba6000mAh.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SOLAR POWER BANK STYBBA 6000 mAh</h5>
+                            <p class="card-text">El cargador portátil Stybba Slim tiene un diseño compacto que permite llevarlo cómodamente en el bolsillo de una prenda o en un bolso pequeño. Además, es eco friendly ya que posee una panel que absorbe la energía solar.</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/HERO10.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GO PRO HERO 10 BLACK</h5>
+                            <p class="card-text">Gracias a la potencia del nuevo y revolucionario procesador GP2, la HERO10 Black captura fotos de 23 MP y vídeos en 5,3K con el doble de velocidad de fotogramas, un rendimiento mejorado con poca luz y con una extraordinaria estabilización de vídeo</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/DJIMini2.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">DRONE DJI MAVIC MINI 2</h5>
+                            <p class="card-text">DJI es el líder mundial en drones civiles, tecnología de imágenes aéreas y tecnología de cámaras creativas. Sus productos son utilizados todos los días por clientes en más de 100 países para la realización de películas, construcción, etc. ¡Mavic Mini 2 llega para romper todos los esquemas!</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="card text-center" style="width: 18rem;">
+                        <div>
+                            <img src="../assets/img/droneDM107s.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">DRONE DM107S</h5>
+                            <p class="card-text">Diseño plegable para ser fácil de transportar y llevar a todos lados. 4 canales de transmisión para un mejor control de vuelo. Regulador de velocidad: principiante, intermedio y avanzado para cubrir cualquier tipo de uso proporcionando asi una gran experiencia de vuelo.
+                            </p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                            <a href="#" class="btn btn-primary">Conocé más</a>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+            
     </main>
 
     <footer class="footer__style">
