@@ -10,6 +10,12 @@
     animation-timing-function: ease;
 }
 
+.animate__fadeIn {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
 .headertitle {
     animation-name: radiant;    
     animation-duration: 4s;
@@ -18,27 +24,27 @@
 }
 
 @keyframes radiant {
-    0% {text-shadow: 1px 1px 1px white, 1px 1px 1px white;}
+    0% {text-shadow: 1px 1px 4px black, 1px 1px 4px black;}
 
-    10% {text-shadow: 1px 1px 2px white, 1px 1px 1px white;}
+    10% {text-shadow: 1px 1px 6px black, 1px 1px 6px black;}
 
-    20%{text-shadow: 1px 1px 3px white, 1px 1px 1px white;}
+    20%{text-shadow: 1px 1px 8px black, 1px 1px 8px black;}
 
-    30%{text-shadow: 1px 1px 4px white, 1px 1px 1px white;}
+    30%{text-shadow: 1px 1px 10px black, 1px 1px 10px black;}
 
-    40%{text-shadow: 1px 1px 5px white, 1px 1px 1px white;}
+    40%{text-shadow: 1px 1px 12px black, 1px 1px 12px black;}
 
-    50% {text-shadow: 1px 1px 6px white, 1px 1px 1px white;}
+    50% {text-shadow: 1px 1px 14px black, 1px 1px 14px black;}
 
-    60% {text-shadow: 1px 1px 5px white, 1px 1px 1px white;}
+    60% {text-shadow: 1px 1px 12px black, 1px 1px 12px black;}
 
-    70% {text-shadow: 1px 1px 4px white, 1px 1px 1px white;}
+    70% {text-shadow: 1px 1px 10px black, 1px 1px 10px black;}
 
-    80% {text-shadow: 1px 1px 3px white, 1px 1px 1px white;}
+    80% {text-shadow: 1px 1px 8px black, 1px 1px 8px black;}
 
-    90% {text-shadow: 1px 1px 2px white, 1px 1px 1px white;}
+    90% {text-shadow: 1px 1px 6px black, 1px 1px 6px black;}
 
-    100% {text-shadow: 1px 1px 1px white, 1px 1px 1px white;}
+    100% {text-shadow: 1px 1px 4px black, 1px 1px 4px black;}
 }
 
 
@@ -365,7 +371,11 @@ footer article a {
     margin-bottom: 50px;
 }
 
-
+.tempTitle {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin-left: 50px;
+}
 
 
 /*STREET*/
