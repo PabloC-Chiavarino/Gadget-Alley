@@ -65,13 +65,13 @@ body {
 
 header {
     width: 100%;
-    height: 200px;
+    height: 260px;
 
 }
 
 .headerimg {
     width: 100%;
-    height: 200px;
+    height: 260px;
 }
 
 .headertitle {
@@ -79,7 +79,7 @@ header {
     margin: 5px 50px;
     position: absolute;
     font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 90px;  
+    font-size: 105px;  
     z-index: 1;  
 }           
 
@@ -539,6 +539,18 @@ main form button {
 
 @media only screen and (max-width: 576px) {
     
+    
+    header {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .headerimg {
+        width: 100%;
+        height: 200px;
+    }
+    
+    
     .headertitle {
         margin: 20px 10px;
         font-size: 80px; 
@@ -572,17 +584,26 @@ main form button {
 /*footer*/
 
 .footer__style {
-    height: 114px;
+    height: 119px;
 }
 
 .footer__subtitle {
-    margin-right: 40px;
-    margin-top: 25px;
+    margin-right: 93px;
+    margin-top: 8px;
+}
+
+.footer__social {
+    margin-top: 22px;
+}
+
+.footer_title {
+    font-size: 45px;
 }
 
 footer article a {
     margin-inline: 12px;
 }
+
 
 /*index*/
 
