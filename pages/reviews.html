@@ -12,13 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-        <header>
+    <header>
         <h1 class="headertitle">Gadget Alley</h1>
+        <div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="headerimg" src="../assets/img/abstract-tech-back.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img img class="headerimg" src="../assets/img/phone-city.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img img class="headerimg" src="../assets/img/woman-headset.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        </div>
     </header>
     
     <input type="search" id="searcher" placeholder="Búsqueda">
@@ -54,32 +70,32 @@
         <h2 class="maintitle_second maintitle_second_mobile">Reviews</h2>
         <h3 class="maintitle_third maintitle_third_mobile">SMARTWATCH</h3>
         <section class="content_reviews">
-            <article class="reviews_grid_style">
-                <p class="content_subtitle">XIAOMI MI SMART BAND 7</p>
-                <iframe class="iframes_reviews" src="https://www.youtube.com/embed/UvUSnCazAbs" title="LA TENGO!🔥XIAOMI BAND 7 PRIMERA REVIEW A FONDO en ESPAÑOL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <button class="btn btn-primary">Ir al producto</button>
+            <article data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="reviews_grid_style">
+                    <p class="content_subtitle">XIAOMI MI SMART BAND 7</p>
+                    <iframe class="iframes_reviews" src="https://www.youtube.com/embed/UvUSnCazAbs" title="LA TENGO!🔥XIAOMI BAND 7 PRIMERA REVIEW A FONDO en ESPAÑOL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="btn btn-primary">Ir al producto</button>
             </article>
-            <article class="reviews_grid_style">
+            <article data-aos="fade-up" data-aos-easing="ease-in-sine" class="reviews_grid_style">
                 <p class="content_subtitle">AMAZFIT GTR 2</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/WZ6XSr1YdDI" title="AMAZFIT GTR 2💥¡Esto SÍ es un SMARTWATCH SERIO! REVIEW TRAS 5 SEMANAS en español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <button class="btn btn-primary">Ir al producto</button>
             </article>
-            <article class="reviews_grid_style">
+            <article data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="reviews_grid_style">
                 <p class="content_subtitle">GALAXY WATCH 4</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/2c5ss7en6KQ" title="¿El MEJOR? Galaxy Watch 4 REVIEW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <button class="btn btn-primary">Ir al producto</button>
             </article>
-            <article class="reviews_grid_style">
+            <article data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="reviews_grid_style">
                 <p class="content_subtitle">AMAZFIT GTS 2 MINI</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/GbgZhLLX9bw" title="Amazfit GTS 2 MINI🔥Primera REVIEW A FONDO y UNBOXING" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <button class="btn btn-primary">Ir al producto</button>
             </article>
-            <article class="reviews_grid_style">
+            <article data-aos="fade-up" data-aos-easing="ease-in-sine" class="reviews_grid_style">
                 <p class="content_subtitle">AMAZFIT GTS 2</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/aCYxZVjnvVI" title="Amazfit GTS 2🔥A FONDO⌚Unboxing y ANÁLISIS de TODAS sus funciones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <button class="btn btn-primary">Ir al producto</button>
             </article>
-            <article class="reviews_grid_style">
+            <article data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="reviews_grid_style">
                 <p class="content_subtitle">MI BAND 6</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/kSwYAL13rIw" title="¡IMPOSIBLE decirle que NO! Xiaomi Mi Band 6 REVIEW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <button class="btn btn-primary">Ir al producto</button>
@@ -114,6 +130,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
