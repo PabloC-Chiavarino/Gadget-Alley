@@ -552,11 +552,10 @@ main form button {
 
 /***responsive***/
 
-/**gral**/
-
 @media only screen and (max-width: 576px) {
-    
-    
+
+/**gral**/
+        
     header {
         width: 100%;
         height: 200px;
@@ -593,9 +592,6 @@ main form button {
         font-size: 20px;
     }
 
-    #searcher {
-        margin-left: 55%;
-    }
 
 
 /*footer*/
@@ -736,5 +732,155 @@ form {
     width: 520px;
 }
 
+
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+
+/*GRAL*/
+
+    .navbar {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding-inline: 18px;
+    }
+
+    .navbar-toggler {
+        margin: -5px;
+    }
+
+    .eslogan {
+        position: absolute;
+        margin: 90px 0px 0px 400px;
+        font-size: 25px;
+    }
+
+/*footer*/
+
+    .footer__subtitle {
+        margin-right: 93px;
+        margin-top: 8px;
+    }
+
+/*index*/
+
+    .content_index {
+        gap: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "first" 
+            "second" 
+            "third"
+            ;
+    }
+    
+    .first {
+        flex-direction: column;
+        font-size   : 20px;
+        gap: 0px;
+        align-items: center;
+    }
+    
+    .first_2 {
+        margin: 60px;
+    }
+    
+    .btn_display {
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    .second {
+        margin-right: 0px;
+    }
+    
+    .third {
+        margin-top: -200px;
+        margin-left: 0px;
+    }
+
+/*street*/
+
+.content_street_header {
+    height: 280px;
+}
+
+.content_street {
+    gap:60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+            "first_product second_product"
+            ;
+}
+
+.content_subtitle {
+    font-size: 40px;
+}
+
+.grid_img {
+    width: 290px;
+    height: 270px;
+}
+
+.grid_btn_style {
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+
+
+/*outdoor*/
+
+.content_outdoor_header {
+    height: 280px;
+}
+
+
+.content_outdoor {
+    gap: 40px;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "first_product second_product";
+}
+
+
+
+/*reviews*/
+
+.iframes_reviews {
+    width: 80%;
+    height: 300px;
+}
+
+.content_reviews {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.maintitle_second_mobile {
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.maintitle_third_mobile{
+    margin-left: 180px;    
+}
+
+
+/*contacto*/
+
+
+.contactIMG {
+    display: none;
+}
+
+form {
+    width: 650px;
+}
 
 }
