@@ -755,15 +755,20 @@ form {
 
     .eslogan {
         position: absolute;
-        margin: 90px 0px 0px 400px;
-        font-size: 25px;
+        margin: 90px 0px 0px 350px;
+        font-size: 22px;
+        height: 125px;
     }
 
 /*footer*/
 
     .footer__subtitle {
-        margin-right: 93px;
-        margin-top: 8px;
+        margin-right: 33px;
+        margin-top: 20px;
+    }
+
+    .footer__style {
+        height: 117px;
     }
 
 /*index*/
@@ -811,7 +816,7 @@ form {
 }
 
 .content_street {
-    gap:60px;
+    gap:10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
@@ -840,9 +845,8 @@ form {
     height: 280px;
 }
 
-
 .content_outdoor {
-    gap: 40px;
+    gap: 10px;
     grid-template-columns: 2fr;
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: "first_product second_product";
