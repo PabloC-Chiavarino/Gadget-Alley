@@ -531,7 +531,24 @@ main form button {
     border-radius: 10px;
 }
 
+/*WorkingOn*/
 
+.inDev__style {
+    background-color: #ffff00;
+    display: flex;
+    font-family: bebas neue;
+}
+
+.inDev__img {
+    max-width: 500px;
+    height: 500px;
+    margin: 10px 0 15px 0;
+}
+
+.centerElement {
+    display: flex;
+    justify-content: center;
+}
 
 /***responsive***/
 
