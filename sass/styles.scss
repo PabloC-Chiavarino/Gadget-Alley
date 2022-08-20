@@ -1,4 +1,6 @@
-
+@import "colors";
+@import "fonts";
+@import "box-sizing.scss";
 
 
 /*animaciones*/
@@ -61,20 +63,18 @@
 }
 
 body {
-    background-color:rgb(238, 238, 238);
+    background-color: $BGcolor-first;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
 
 header {
-    width: 100%;
-    height: 260px;
+    @include YX(260px, 100%);
 
 }
 
 .headerimg {
-    width: 100%;
-    height: 260px;
+    @include YX(260px, 100%);
 }
 
 .headertitle {
@@ -87,13 +87,12 @@ header {
 }           
 
 .navbar {
-    font-family: 'Bebas Neue', cursive;
+    @include YX(45px, fit-content);
+    font-family: $primaryFont;
     font-weight: lighter;
     letter-spacing: 3px;
     position: sticky;
     top: 0;
-    height:45px;
-    width: fit-content;
     margin-top: -50px;
     font-size: 23px;
     text-decoration: none;
@@ -102,11 +101,13 @@ header {
     --bs-navbar-active-color: rgb(88, 88, 88);
 }
 
-nav ul {
-    display: flex;
-    justify-content: start;
-    list-style-type: none;
-}
+nav {
+    ul{
+        display: flex;
+        justify-content: start;
+        list-style-type: none;
+    }
+    }
 
 
 .eslogan {
@@ -119,7 +120,7 @@ nav ul {
     letter-spacing: 3px;    
     display: flex;              
     justify-content: end;
-    background-color:rgb(238, 238, 238);
+    background-color:$BGcolor-first;
     text-shadow: 0px 1px 10px black;
 }
 
@@ -130,23 +131,21 @@ nav ul {
 }
 
 .btn_style {
+    @include YX(45px, 160px);
     color: white;
     letter-spacing: 1px;
     background-color: rgb(0, 0, 0, 0.900);
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     border-radius: 3px;
     font-size: 20px;    
-    height: 45px;
-    width: 160px;
     margin-top: 50px;
     cursor: pointer;
     transition: all 0.5s;
-}
-
-.btn_style:hover {
-    background-color: rgb(175, 175, 175);
-    color: black;
-    border: 1px solid black;
+        &:hover{
+            background-color: rgb(175, 175, 175);
+            color: black;
+            border: 1px solid black;
+        }
 }
 
 
@@ -181,8 +180,7 @@ nav ul {
 }
 
 .card-img-top {
-    width: 250px;
-    height: 240px;
+    @include YX(240px, 250px);
     margin-top: 20px;
 }
 
@@ -190,7 +188,7 @@ nav ul {
     margin-top: 180px;
     margin-left: 230px;
     margin-bottom: 50px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: 45px;
     background-color: lightgrey;
     color: black;
@@ -203,7 +201,7 @@ nav ul {
 .maintitle_third {
     margin-left: 360px;
     margin-bottom: 100px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: 35px;
     background-color: rgb(114, 113, 113);
     color: black;
@@ -226,10 +224,9 @@ nav ul {
 
 
 .footer__style {
+    @include YX(110px, 100%);
     margin-top: 200px;
-    height: 110px;
     color: rgb(163, 158, 158);
-    width: 100%;
     background-color: rgb(15, 15, 15);
     font-family: 'Edu NSW ACT Foundation', cursive;
 }
@@ -252,18 +249,18 @@ nav ul {
     justify-content: end;
 }
 
-footer article a {
+footer { 
+    article 
+        a {
     margin-inline: 20px;
     padding-bottom: 5px;
     transition: all 0.5s;
+        }
 }
 
 .footer__icons:hover {
-    height: 42px;
-    width: 42px;
+    @include YX(42px, 42px);
 }
-
-
 
 
 
@@ -273,7 +270,7 @@ footer article a {
     margin: 180px 0px 80px 0px;
     padding-top: 10px;
     color: black;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: 60px;
     letter-spacing: 6px;
     display: flex;
@@ -284,7 +281,7 @@ footer article a {
 .content_index {
     background-image: linear-gradient(to bottom, rgb(221, 221, 221), white);
     color: rgb(0, 0, 0, 0.900); 
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: medium;
     letter-spacing: 1px;
     padding: 20px;
@@ -316,8 +313,7 @@ footer article a {
 }   
 
 .firstIMG {
-    width: 420px;
-    height: 370px;
+    @include YX(370px, 420px);
     margin-top: 60px;
     border-radius: 10px;
 }
@@ -333,8 +329,7 @@ footer article a {
 }
 
 .secondIMG {
-    width: 350px;
-    height: 320px;
+    @include YX(320px, 350px);
     border-radius: 10px;
     margin-top: 60px;
     margin-bottom: 50px;
@@ -351,15 +346,14 @@ footer article a {
 }
 
 .thirdIMG {
-    width: 350px;
-    height: 320px;
+    @include YX(320px, 350px);
     border-radius: 10px;
     margin-top: 60px;
     margin-bottom: 50px;
 }
 
 .tempTitle {
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: 30px;
     margin-left: 50px;
 }
@@ -374,12 +368,11 @@ footer article a {
 
 
 .content_street_header {
-    width: 100%;
-    height: 330px;
+    @include YX(330px, 100%px);
     background-image: url(../assets/img/smartwrist_cut.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: 35px;
     margin-top:180px;
     margin-bottom: 100px;
@@ -388,7 +381,7 @@ footer article a {
 
 .content_street {
     color: rgb(0, 0, 0, 0.900);
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -406,13 +399,12 @@ footer article a {
 /*OUTDOOR*/
 
 .content_outdoor_header {
-    width: 100%;
-    height: 330px;
+    @include YX(330px, 100%px);
     background-image: url(../assets/img/silhouette_drone.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 1px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: 35px;
     margin-top:180px;
     margin-bottom: 100px;
@@ -421,7 +413,7 @@ footer article a {
 
 .content_outdoor {
     color: rgb(0, 0, 0, 0.900);
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -436,7 +428,7 @@ footer article a {
 
 .content_reviews {
     color: rgb(0, 0, 0, 0.900);
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     font-size: medium;
     padding: 30px;
     letter-spacing: 1px;
@@ -453,8 +445,7 @@ footer article a {
 }
 
 .iframes_reviews {
-    width: 400px;
-    height: 220px;
+    @include YX(220px, 400px);
     margin: 70px 0px 25px 0px;
     border: 5px groove rgb(230, 230, 230);
     border-radius: 3px;
@@ -467,15 +458,14 @@ footer article a {
 
 
 form {
-    font-family: "Bebas Neue", cursive;
+    @include YX(600px, 450px);
+    font-family: $primaryFont;
     font-size: 18px;
     letter-spacing: 2px;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    height: 600px;
-    width: 450PX;
     border: 4px solid rgb(70, 70, 70);
     margin-top: 50px;
     margin-left: 30px;
@@ -499,7 +489,7 @@ main form input {
 
 main form button {
     height: 30px;
-    font-family: "Bebas Neue",cursive;
+    font-family: $primaryFont;
     font-size: 18px;
     background-color: rgb(59, 59, 59);
     color: white;
@@ -512,8 +502,7 @@ main form button {
 
 
 .contactIMG {
-    height: 600px;
-    width: 70%;
+    @include YX(600px, 70%);
     margin-top: 50px;
     border-radius: 10px;
 }
@@ -523,12 +512,11 @@ main form button {
 .inDev__style {
     background-color: #ffff00;
     display: flex;
-    font-family: bebas neue;
+    font-family: $primaryFont;
 }
 
 .inDev__img {
-    max-width: 500px;
-    height: 500px;
+    @include YX(500px, 500px);
     margin: 10px 0 15px 0;
 }
 
@@ -544,16 +532,13 @@ main form button {
 /**gral**/
         
     header {
-        width: 100%;
-        height: 200px;
+        @include YX(200px, 100%);
     }
     
     .headerimg {
-        width: 100%;
-        height: 200px;
+        @include YX(200px, 100%);
     }
-    
-    
+        
     .headertitle {
         margin: 20px 10px;
         font-size: 80px; 
@@ -666,8 +651,7 @@ footer article a {
 }
 
 .grid_img {
-    width: 290px;
-    height: 270px;
+    @include YX(270px, 290px);
 }
 
 .grid_btn_style {
@@ -816,8 +800,7 @@ form {
 }
 
 .grid_img {
-    width: 290px;
-    height: 270px;
+    @include YX(270px, 290px);
 }
 
 .grid_btn_style {
@@ -844,8 +827,7 @@ form {
 /*reviews*/
 
 .iframes_reviews {
-    width: 80%;
-    height: 300px;
+    @include YX(300px, 80%);
 }
 
 .content_reviews {

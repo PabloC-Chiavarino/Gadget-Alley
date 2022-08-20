@@ -71,13 +71,13 @@ body {
 }
 
 header {
-  width: 100%;
   height: 260px;
+  width: 100%;
 }
 
 .headerimg {
-  width: 100%;
   height: 260px;
+  width: 100%;
 }
 
 .headertitle {
@@ -90,13 +90,13 @@ header {
 }
 
 .navbar {
+  height: 45px;
+  width: fit-content;
   font-family: "Bebas Neue", cursive;
   font-weight: lighter;
   letter-spacing: 3px;
   position: sticky;
   top: 0;
-  height: 45px;
-  width: fit-content;
   margin-top: -50px;
   font-size: 23px;
   text-decoration: none;
@@ -131,14 +131,14 @@ nav ul {
 }
 
 .btn_style {
+  height: 45px;
+  width: 160px;
   color: white;
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0.9);
   font-family: "Bebas Neue", cursive;
   border-radius: 3px;
   font-size: 20px;
-  height: 45px;
-  width: 160px;
   margin-top: 50px;
   cursor: pointer;
   transition: all 0.5s;
@@ -180,8 +180,8 @@ nav ul {
 }
 
 .card-img-top {
-  width: 250px;
   height: 240px;
+  width: 250px;
   margin-top: 20px;
 }
 
@@ -220,10 +220,10 @@ nav ul {
 
 /*FOOTER*/
 .footer__style {
-  margin-top: 200px;
   height: 110px;
-  color: rgb(163, 158, 158);
   width: 100%;
+  margin-top: 200px;
+  color: rgb(163, 158, 158);
   background-color: rgb(15, 15, 15);
   font-family: "Edu NSW ACT Foundation", cursive;
 }
@@ -303,8 +303,8 @@ footer article a {
 }
 
 .firstIMG {
-  width: 420px;
   height: 370px;
+  width: 420px;
   margin-top: 60px;
   border-radius: 10px;
 }
@@ -320,8 +320,8 @@ footer article a {
 }
 
 .secondIMG {
-  width: 350px;
   height: 320px;
+  width: 350px;
   border-radius: 10px;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -338,8 +338,8 @@ footer article a {
 }
 
 .thirdIMG {
-  width: 350px;
   height: 320px;
+  width: 350px;
   border-radius: 10px;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -358,8 +358,8 @@ footer article a {
 }
 
 .content_street_header {
-  width: 100%;
   height: 330px;
+  width: 100% px;
   background-image: url(../assets/img/smartwrist_cut.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -382,8 +382,8 @@ footer article a {
 
 /*OUTDOOR*/
 .content_outdoor_header {
-  width: 100%;
   height: 330px;
+  width: 100% px;
   background-image: url(../assets/img/silhouette_drone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,8 +425,8 @@ footer article a {
 }
 
 .iframes_reviews {
-  width: 400px;
   height: 220px;
+  width: 400px;
   margin: 70px 0px 25px 0px;
   border: 5px groove rgb(230, 230, 230);
   border-radius: 3px;
@@ -434,6 +434,8 @@ footer article a {
 
 /*CONTACTO*/
 form {
+  height: 600px;
+  width: 450px;
   font-family: "Bebas Neue", cursive;
   font-size: 18px;
   letter-spacing: 2px;
@@ -441,8 +443,6 @@ form {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  height: 600px;
-  width: 450PX;
   border: 4px solid rgb(70, 70, 70);
   margin-top: 50px;
   margin-left: 30px;
@@ -487,12 +487,12 @@ main form button {
 .inDev__style {
   background-color: #ffff00;
   display: flex;
-  font-family: bebas neue;
+  font-family: "Bebas Neue", cursive;
 }
 
 .inDev__img {
-  max-width: 500px;
   height: 500px;
+  width: 500px;
   margin: 10px 0 15px 0;
 }
 
@@ -505,12 +505,12 @@ main form button {
 @media only screen and (max-width: 576px) {
   /**gral**/
   header {
-    width: 100%;
     height: 200px;
+    width: 100%;
   }
   .headerimg {
-    width: 100%;
     height: 200px;
+    width: 100%;
   }
   .headertitle {
     margin: 20px 10px;
@@ -591,8 +591,8 @@ main form button {
     font-size: 30px;
   }
   .grid_img {
-    width: 290px;
     height: 270px;
+    width: 290px;
   }
   .grid_btn_style {
     margin-left: 0px;
@@ -694,8 +694,8 @@ main form button {
     font-size: 40px;
   }
   .grid_img {
-    width: 290px;
     height: 270px;
+    width: 290px;
   }
   .grid_btn_style {
     margin-left: 0px;
@@ -713,8 +713,8 @@ main form button {
   }
   /*reviews*/
   .iframes_reviews {
-    width: 80%;
     height: 300px;
+    width: 80%;
   }
   .content_reviews {
     grid-template-columns: 1fr;
