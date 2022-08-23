@@ -84,7 +84,7 @@ header {
   color: whitesmoke;
   margin: 5px 50px;
   position: absolute;
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Edu NSW ACT Foundation";
   font-size: 105px;
   z-index: 1;
 }
@@ -92,7 +92,7 @@ header {
 .navbar {
   height: 45px;
   width: fit-content;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-weight: lighter;
   letter-spacing: 3px;
   position: sticky;
@@ -116,7 +116,7 @@ nav ul {
   margin-top: 20px;
   margin-bottom: 10px;
   color: black;
-  font-family: "Splash", cursive;
+  font-family: "Splash";
   font-size: 25px;
   letter-spacing: 3px;
   display: flex;
@@ -136,14 +136,14 @@ nav ul {
   color: white;
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0.9);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   border-radius: 3px;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 50px;
   cursor: pointer;
   transition: all 0.5s;
 }
-
 .btn_style:hover {
   background-color: rgb(175, 175, 175);
   color: black;
@@ -185,11 +185,11 @@ nav ul {
   margin-top: 20px;
 }
 
-.maintitle_second {
+.maintitle_second, .maintitle_third {
   margin-top: 180px;
   margin-left: 230px;
   margin-bottom: 50px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 45px;
   background-color: lightgrey;
   color: black;
@@ -202,13 +202,9 @@ nav ul {
 .maintitle_third {
   margin-left: 360px;
   margin-bottom: 100px;
-  font-family: "Bebas Neue", cursive;
+  margin-top: 30px;
   font-size: 35px;
   background-color: rgb(114, 113, 113);
-  color: black;
-  padding-left: 6px;
-  width: 100%;
-  letter-spacing: 1px;
 }
 
 .content_subtitle {
@@ -225,7 +221,7 @@ nav ul {
   margin-top: 200px;
   color: rgb(163, 158, 158);
   background-color: rgb(15, 15, 15);
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Edu NSW ACT Foundation";
 }
 
 .footer__title {
@@ -262,7 +258,7 @@ footer article a {
   margin: 180px 0px 80px 0px;
   padding-top: 10px;
   color: black;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 60px;
   letter-spacing: 6px;
   display: flex;
@@ -273,7 +269,7 @@ footer article a {
 .content_index {
   background-image: linear-gradient(to bottom, rgb(221, 221, 221), white);
   color: rgba(0, 0, 0, 0.9);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Alumni Sans Pinstripe";
   font-size: medium;
   letter-spacing: 1px;
   padding: 20px;
@@ -285,14 +281,15 @@ footer article a {
 }
 
 .content_subtitle_index {
-  font-size: 30px;
+  font-family: "Bebas Neue";
+  font-size: 35px;
   position: absolute;
   text-decoration: underline grey;
 }
 
 .first {
   grid-area: first;
-  font-size: 25px;
+  font-size: 36px;
   display: flex;
   gap: 100px;
 }
@@ -313,7 +310,7 @@ footer article a {
   grid-area: second;
   margin-top: -50px;
   margin-right: 40px;
-  font-size: 20px;
+  font-size: 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,7 +327,7 @@ footer article a {
 .third {
   grid-area: third;
   margin-left: 40px;
-  font-size: 20px;
+  font-size: 27px;
   margin-top: -50px;
   display: flex;
   flex-direction: column;
@@ -346,7 +343,7 @@ footer article a {
 }
 
 .tempTitle {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 30px;
   margin-left: 50px;
 }
@@ -363,7 +360,7 @@ footer article a {
   background-image: url(../assets/img/smartwrist_cut.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 35px;
   margin-top: 180px;
   margin-bottom: 100px;
@@ -372,7 +369,7 @@ footer article a {
 
 .content_street {
   color: rgba(0, 0, 0, 0.9);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -388,7 +385,7 @@ footer article a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 1px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 35px;
   margin-top: 180px;
   margin-bottom: 100px;
@@ -397,18 +394,18 @@ footer article a {
 
 .content_outdoor {
   color: rgba(0, 0, 0, 0.9);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 20px;
-  column-gap: 250px;
+  row-gap: 40px;
+  column-gap: 200px;
 }
 
 /*REVIEWS*/
 .content_reviews {
   color: rgba(0, 0, 0, 0.9);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: medium;
   padding: 30px;
   letter-spacing: 1px;
@@ -436,7 +433,7 @@ footer article a {
 form {
   height: 600px;
   width: 450px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 18px;
   letter-spacing: 2px;
   color: whitesmoke;
@@ -465,7 +462,7 @@ main form input {
 
 main form button {
   height: 30px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 18px;
   background-color: rgb(59, 59, 59);
   color: white;
@@ -487,7 +484,7 @@ main form button {
 .inDev__style {
   background-color: #ffff00;
   display: flex;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
 }
 
 .inDev__img {
@@ -575,7 +572,7 @@ main form button {
     margin-top: -200px;
     margin-left: 0px;
   }
-  .maintitle_second {
+  .maintitle_second, .maintitle_third {
     margin-top: -220px;
     margin-left: 150px;
   }
