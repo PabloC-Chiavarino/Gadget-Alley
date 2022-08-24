@@ -78,7 +78,7 @@ header {
 }
 
 .headertitle {
-    color: whitesmoke;
+    color: $w;
     margin: 5px 50px;
     position: absolute;
     font-family: map-get($fonts, title);
@@ -132,7 +132,7 @@ nav {
 
 .btn_style {
     @include YX(45px, 160px);
-    color: white;
+    color: $w;
     letter-spacing: 1px;
     background-color: rgb(0, 0, 0, 0.900);
     font-family: map-get($fonts, subtitle);
@@ -151,27 +151,16 @@ nav {
 
 
 .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #fd7e0de3;
-    --bs-btn-border-color: #202020;
-    --bs-btn-hover-color: #0f0f0f;
-    --bs-btn-hover-bg: #fd8c279c;
-    --bs-btn-hover-border-color: #fd8c27;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #fd8c27;
-    --bs-btn-active-border-color: #fd8c27;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #656566;
-    --bs-btn-disabled-border-color: #acadae;
+    @extend .btn_style;
+    @include YX(40px, 120px);
+    font-size: 18px;
 }
 
 .btn {
     --bs-btn-padding-x: 1.2rem;
     letter-spacing: 1px;
     margin-top: 25px;
-    margin-inline: 5px;
+    margin-inline: 2px;
     --bs-btn-border-radius: 3px;
 }
 
@@ -277,7 +266,7 @@ footer {
 }
 
 .content_index {
-    background-image: linear-gradient(to bottom, $Lgrey, white);
+    background-image: linear-gradient(to bottom, $Lgrey, $w);
     color: $b; 
     font-family: map-get($map:$fonts, $key: content);
     font-size: medium;
@@ -455,7 +444,7 @@ form {
     font-family: map-get($fonts, subtitle);
     font-size: 18px;
     letter-spacing: 2px;
-    color: whitesmoke;
+    color: $w;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -463,7 +452,7 @@ form {
     margin-top: 50px;
     margin-left: 30px;
     padding: 8px;
-    background-image: linear-gradient(to bottom, rgb(75, 75, 75), white);
+    background-image: linear-gradient(to bottom, rgb(75, 75, 75), $w);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: -12px;
@@ -489,7 +478,7 @@ main
         font-family: map-get($fonts, subtitle);
         font-size: 18px;
         background-color: $Dgrey;
-        color: white;
+        color: $w;
 }   
 
 .contact_main {

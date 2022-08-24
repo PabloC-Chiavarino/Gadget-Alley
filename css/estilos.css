@@ -130,10 +130,10 @@ nav ul {
   justify-content: space-evenly;
 }
 
-.btn_style {
+.btn_style, .btn-primary {
   height: 45px;
   width: 160px;
-  color: white;
+  color: whitesmoke;
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0.9);
   font-family: "Bebas Neue";
@@ -144,34 +144,23 @@ nav ul {
   cursor: pointer;
   transition: all 0.5s;
 }
-.btn_style:hover {
+.btn_style:hover, .btn-primary:hover {
   background-color: rgb(175, 175, 175);
   color: black;
   border: 1px solid black;
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #fd7e0de3;
-  --bs-btn-border-color: #202020;
-  --bs-btn-hover-color: #0f0f0f;
-  --bs-btn-hover-bg: #fd8c279c;
-  --bs-btn-hover-border-color: #fd8c27;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #fd8c27;
-  --bs-btn-active-border-color: #fd8c27;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #656566;
-  --bs-btn-disabled-border-color: #acadae;
+  height: 40px;
+  width: 120px;
+  font-size: 18px;
 }
 
 .btn {
   --bs-btn-padding-x: 1.2rem;
   letter-spacing: 1px;
   margin-top: 25px;
-  margin-inline: 5px;
+  margin-inline: 2px;
   --bs-btn-border-radius: 3px;
 }
 
@@ -267,7 +256,7 @@ footer article a {
 }
 
 .content_index {
-  background-image: linear-gradient(to bottom, rgb(207, 205, 205), white);
+  background-image: linear-gradient(to bottom, rgb(207, 205, 205), whitesmoke);
   color: black;
   font-family: "Alumni Sans Pinstripe";
   font-size: medium;
@@ -444,7 +433,7 @@ form {
   margin-top: 50px;
   margin-left: 30px;
   padding: 8px;
-  background-image: linear-gradient(to bottom, rgb(75, 75, 75), white);
+  background-image: linear-gradient(to bottom, rgb(75, 75, 75), whitesmoke);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: -12px;
@@ -465,7 +454,7 @@ main form button {
   font-family: "Bebas Neue";
   font-size: 18px;
   background-color: rgb(113, 113, 113);
-  color: white;
+  color: whitesmoke;
 }
 
 .contact_main {
