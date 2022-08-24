@@ -102,7 +102,7 @@ header {
   text-decoration: none;
   --bs-navbar-nav-link-padding-x: 25px;
   z-index: 1;
-  --bs-navbar-active-color: rgb(88, 88, 88);
+  --bs-navbar-active-color: grey;
 }
 
 nav ul {
@@ -191,7 +191,7 @@ nav ul {
   margin-bottom: 50px;
   font-family: "Bebas Neue";
   font-size: 45px;
-  background-color: lightgrey;
+  background-color: rgb(207, 205, 205);
   color: black;
   padding-left: 6px;
   width: 100%;
@@ -204,7 +204,7 @@ nav ul {
   margin-bottom: 100px;
   margin-top: 30px;
   font-size: 35px;
-  background-color: rgb(114, 113, 113);
+  background-color: rgb(113, 113, 113);
 }
 
 .content_subtitle {
@@ -219,8 +219,8 @@ nav ul {
   height: 110px;
   width: 100%;
   margin-top: 200px;
-  color: rgb(163, 158, 158);
-  background-color: rgb(15, 15, 15);
+  color: rgb(207, 205, 205);
+  background-color: black;
   font-family: "Edu NSW ACT Foundation";
 }
 
@@ -263,12 +263,12 @@ footer article a {
   letter-spacing: 6px;
   display: flex;
   justify-content: center;
-  background-color: rgb(180, 179, 179);
+  background-color: rgb(207, 205, 205);
 }
 
 .content_index {
-  background-image: linear-gradient(to bottom, rgb(221, 221, 221), white);
-  color: rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(to bottom, rgb(207, 205, 205), white);
+  color: black;
   font-family: "Alumni Sans Pinstripe";
   font-size: medium;
   letter-spacing: 1px;
@@ -284,7 +284,7 @@ footer article a {
   font-family: "Bebas Neue";
   font-size: 35px;
   position: absolute;
-  text-decoration: underline grey;
+  text-decoration: underline rgb(113, 113, 113);
 }
 
 .first {
@@ -364,11 +364,11 @@ footer article a {
   font-size: 35px;
   margin-top: 180px;
   margin-bottom: 100px;
-  color: rgba(0, 0, 0, 0.9);
+  color: black;
 }
 
 .content_street {
-  color: rgba(0, 0, 0, 0.9);
+  color: black;
   font-family: "Bebas Neue";
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -389,11 +389,11 @@ footer article a {
   font-size: 35px;
   margin-top: 180px;
   margin-bottom: 100px;
-  color: rgba(0, 0, 0, 0.9);
+  color: black;
 }
 
 .content_outdoor {
-  color: rgba(0, 0, 0, 0.9);
+  color: black;
   font-family: "Bebas Neue";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -404,7 +404,7 @@ footer article a {
 
 /*REVIEWS*/
 .content_reviews {
-  color: rgba(0, 0, 0, 0.9);
+  color: black;
   font-family: "Bebas Neue";
   font-size: medium;
   padding: 30px;
@@ -464,7 +464,7 @@ main form button {
   height: 30px;
   font-family: "Bebas Neue";
   font-size: 18px;
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(113, 113, 113);
   color: white;
 }
 
@@ -555,9 +555,9 @@ main form button {
   }
   .first {
     flex-direction: column;
-    font-size: 20px;
     gap: 0px;
     align-items: center;
+    font-size: 27px;
   }
   .first_2 {
     margin: 60px;
@@ -659,7 +659,7 @@ main form button {
   }
   .first {
     flex-direction: column;
-    font-size: 20px;
+    font-size: 27px;
     gap: 0px;
     align-items: center;
   }

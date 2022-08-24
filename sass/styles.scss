@@ -1,6 +1,6 @@
 @import "colors";
 @import "fonts";
-@import "box-sizing";
+@import "sizing";
 
 
 /*animaciones*/
@@ -63,7 +63,7 @@
 }
 
 body {
-    background-color: $BGcolor-first;
+    background-color: $BGcolor;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
@@ -98,7 +98,7 @@ header {
     text-decoration: none;
     --bs-navbar-nav-link-padding-x: 25px;
     z-index: 1;
-    --bs-navbar-active-color: rgb(88, 88, 88);
+    --bs-navbar-active-color: grey;
 }
 
 nav {
@@ -120,7 +120,7 @@ nav {
     letter-spacing: 3px;    
     display: flex;              
     justify-content: end;
-    background-color:$BGcolor-first;
+    background-color:$BGcolor;
     text-shadow: 0px 1px 10px black;
 }
 
@@ -191,7 +191,7 @@ nav {
     margin-bottom: 50px;
     font-family: map-get($fonts, subtitle);
     font-size: 45px;
-    background-color: lightgrey;
+    background-color: $Lgrey;
     color: black;
     padding-left: 6px;
     width: 100%;
@@ -205,7 +205,7 @@ nav {
     margin-bottom: 100px;
     margin-top: 30px;
     font-size: 35px;
-    background-color: rgb(114, 113, 113);
+    background-color: $Dgrey;
 }
 
 
@@ -224,8 +224,8 @@ nav {
 .footer__style {
     @include YX(110px, 100%);
     margin-top: 200px;
-    color: rgb(163, 158, 158);
-    background-color: rgb(15, 15, 15);
+    color: $Lgrey;
+    background-color: black;
     font-family: map-get($fonts, title );
 }
 
@@ -273,12 +273,12 @@ footer {
     letter-spacing: 6px;
     display: flex;
     justify-content: center;
-    background-color: rgb(180, 179, 179);
+    background-color: $Lgrey;
 }
 
 .content_index {
-    background-image: linear-gradient(to bottom, rgb(221, 221, 221), white);
-    color: rgb(0, 0, 0, 0.900); 
+    background-image: linear-gradient(to bottom, $Lgrey, white);
+    color: $b; 
     font-family: map-get($map:$fonts, $key: content);
     font-size: medium;
     letter-spacing: 1px;
@@ -296,7 +296,7 @@ footer {
     font-family: map-get($fonts, subtitle );
     font-size: 35px;
     position: absolute;
-    text-decoration: underline grey;
+    text-decoration: underline $Dgrey;
 }   
 
 .first {
@@ -375,11 +375,11 @@ footer {
     font-size: 35px;
     margin-top:180px;
     margin-bottom: 100px;
-    color: rgba(0, 0, 0, 0.900)
+    color: $b;
 }
 
 .content_street {
-    color: rgb(0, 0, 0, 0.900);
+    color: $b;
     font-family: map-get($fonts, subtitle);
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -401,11 +401,11 @@ footer {
     font-size: 35px;
     margin-top:180px;
     margin-bottom: 100px;
-    color: rgba(0, 0, 0, 0.900)
+    color: $b;
 }
 
 .content_outdoor {
-    color: rgb(0, 0, 0, 0.900);
+    color: $b;
     font-family: map-get($fonts, subtitle );
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -420,7 +420,7 @@ footer {
 
 
 .content_reviews {
-    color: rgb(0, 0, 0, 0.900);
+    color: $b;
     font-family: map-get($fonts, subtitle);
     font-size: medium;
     padding: 30px;
@@ -476,16 +476,20 @@ form {
     justify-content: center;
 }
 
-main form input {
-    height: 25px;
+main 
+    form 
+        input {
+        height: 25px;
 }
 
-main form button {
-    height: 30px;
-    font-family: map-get($fonts, subtitle);
-    font-size: 18px;
-    background-color: rgb(59, 59, 59);
-    color: white;
+main
+    form
+        button {
+        height: 30px;
+        font-family: map-get($fonts, subtitle);
+        font-size: 18px;
+        background-color: $Dgrey;
+        color: white;
 }   
 
 .contact_main {
@@ -542,9 +546,12 @@ main form button {
         width: 100%;
     }
 
-    nav ul li a {
-        font-size: 18px;
-        padding-inline: 18px;
+    nav 
+        ul 
+            li 
+                a {
+                    font-size: 18px;
+                    padding-inline: 18px;
     }
 
     .navbar-toggler {
@@ -578,8 +585,10 @@ main form button {
     font-size: 45px;
 }
 
-footer article a {
-    margin-inline: 12px;
+footer
+    article
+        a {
+        margin-inline: 12px;
 }
 
 
@@ -598,9 +607,9 @@ footer article a {
 
 .first {
     flex-direction: column;
-    font-size   : 20px;
     gap: 0px;
     align-items: center;
+    font-size: 27px;
 }
 
 .first_2 {
@@ -708,9 +717,12 @@ form {
         width: 100%;
     }
 
-    nav ul li a {
-        font-size: 18px;
-        padding-inline: 18px;
+    nav
+        ul 
+            li
+                a {
+                font-size: 18px;
+                padding-inline: 18px;
     }
 
     .navbar-toggler {
@@ -750,7 +762,7 @@ form {
     
     .first {
         flex-direction: column;
-        font-size   : 20px;
+        font-size: 27px;
         gap: 0px;
         align-items: center;
     }
