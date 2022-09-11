@@ -5,56 +5,53 @@
 
 /*animaciones*/
 
-.animate__fadeInLeftBig {
-    animation-duration: 2.5s;
+.animate__backInUp {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }
 
-.animate__heartBeat {
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-}
-
-.animate__fadeIn {
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-}
 
 .headertitle {
     animation-name: radiant;    
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes radiant {
-    0% {text-shadow: 1px 1px 4px black, 1px 1px 4px black;}
-
-    10% {text-shadow: 1px 1px 6px black, 1px 1px 6px black;}
-
-    20%{text-shadow: 1px 1px 8px black, 1px 1px 8px black;}
-
-    30%{text-shadow: 1px 1px 10px black, 1px 1px 10px black;}
-
-    40%{text-shadow: 1px 1px 12px black, 1px 1px 12px black;}
-
-    50% {text-shadow: 1px 1px 14px black, 1px 1px 14px black;}
-
-    60% {text-shadow: 1px 1px 12px black, 1px 1px 12px black;}
-
-    70% {text-shadow: 1px 1px 10px black, 1px 1px 10px black;}
-
-    80% {text-shadow: 1px 1px 8px black, 1px 1px 8px black;}
-
-    90% {text-shadow: 1px 1px 6px black, 1px 1px 6px black;}
-
-    100% {text-shadow: 1px 1px 4px black, 1px 1px 4px black;}
+    0%  {text-shadow: 0px 0px 0px $b;
+    }
+    20% {
+        text-shadow: 3px 0px 0px whitesmoke;
+    }
+    40% {
+        text-shadow: 0px 0px 0px whitesmoke;
+    }
 }
 
-
+@keyframes sliderBrands {
+    0% {
+        background-position: 900px;
+    }
+    25% {
+        background-position: 500px;
+    }
+    50% {
+        background-position: 0px;
+    }
+    75% {
+        background-position: -500px;
+    }
+    100% {
+        background-position: -900px;
+    }
+}
 
 /*STYLES GENERALES*/
+:root{
+    scrollbar-color:$Lgrey rgb(71, 71, 71);
+    scrollbar-width: thin;
+}
 
 *{
     margin: 0%;
@@ -62,28 +59,35 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: $BGcolor;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
 
-header {
-    @include YX(260px, 100%);
 
+header {
+    @include YX(90px, 100%);
+    background-color: $b;
 }
 
-.headerimg {
-    @include YX(260px, 100%);
+.parallaxTop {
+    @include YX(525px, 100%);
+    background-image: url(../assets/img/phone-city.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .headertitle {
-    color: $w;
-    margin: 5px 50px;
-    position: absolute;
-    font-family: map-get($fonts, title);
-    font-size: 105px;  
-    z-index: 1;  
+    color: whitesmoke;
+    font-family: "Montserrat";
+    font-size: 55px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }           
 
 .navbar {
@@ -97,8 +101,14 @@ header {
     font-size: 23px;
     text-decoration: none;
     --bs-navbar-nav-link-padding-x: 25px;
-    z-index: 1;
-    --bs-navbar-active-color: grey;
+    --bs-navbar-active-color: #adb5bd;
+    --bs-navbar-toggler-border-color: #ffffff00;
+    --bs-navbar-toggler-padding-y: 9px;
+    z-index:1;
+}
+
+.navbar-toggler-icon {
+    @include YX(20px, 30px);
 }
 
 nav {
@@ -107,51 +117,58 @@ nav {
         justify-content: start;
         list-style-type: none;
     }
-    }
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0.8;
+}
+
 
 
 .eslogan {
-    margin-right: 60px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: black;
-    font-family: map-get($fonts, marquee);
+    color: $b;
+    font-family: map-get($fonts, title);
     font-size: 25px;
     letter-spacing: 3px;    
     display: flex;              
-    justify-content: end;
-    background-color:$BGcolor;
-    text-shadow: 0px 1px 10px black;
+    justify-content: center;
+    align-items:center;
+    background-color:transparent;
+    text-shadow: 3px 3px 5px $b;
+    height: 525px;
+    font-weight: bold;
 }
 
-
-.btn_display {
+.btn__display {
     display: flex;
     justify-content: space-evenly;
+    height: 65px;
+    margin-top: 40px;
 }
 
-.btn_style {
+.btn__style {
     @include YX(45px, 160px);
     color: $w;
     letter-spacing: 1px;
     background-color: rgb(0, 0, 0, 0.900);
     font-family: map-get($fonts, subtitle);
-    border-radius: 3px;
+    border-radius: 25px;
     font-size: 20px;    
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
+    box-shadow: $b 1px 1px 5px;
+    border: 0px;
     transition: all 0.5s;
         &:hover{
             background-color: rgb(175, 175, 175);
-            color: black;
-            border: 1px solid black;
+            color: $b;
         }
 }
 
 
 .btn-primary {
-    @extend .btn_style;
+    @extend .btn__style;
     @include YX(40px, 120px);
     font-size: 18px;
 }
@@ -164,15 +181,37 @@ nav {
     --bs-btn-border-radius: 3px;
 }
 
+main {
+    div{
+        section {
+            article {
+                div {
+                    div {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .card {
     --bs-card-spacer-y: 3rem;
 }
 
+.card-text {
+    z-index: 1;
+    opacity: 0; 
+    position:absolute;
+}
+
 .card-img-top {
+    z-index: 2;
+    position: relative;
     @include YX(240px, 250px);
     margin-top: 20px;
-}
+    }
+
 
 .maintitle_second {
     margin-top: 180px;
@@ -181,11 +220,11 @@ nav {
     font-family: map-get($fonts, subtitle);
     font-size: 45px;
     background-color: $Lgrey;
-    color: black;
+    color: $b;
     padding-left: 6px;
     width: 100%;
     letter-spacing: 2px;
-    border: 2px groove black;
+    border: 2px groove $b;
 }
 
 .maintitle_third {
@@ -205,73 +244,168 @@ nav {
     letter-spacing: 1px;
 }
 
+.parallaxMid {
+    @extend .parallaxTop;
+    @include YX(650px, 100%);
+    background-image: url(../assets/img/boxmarket.jpg);
+}
 
+.eslogan__second {
+    @extend .eslogan;
+    @include YX(200px, 100%);
+}
 
 /*FOOTER*/
 
 
 .footer__style {
-    @include YX(110px, 100%);
-    margin-top: 200px;
+    @include YX(340px, 100%);
     color: $Lgrey;
-    background-color: black;
+    background-color: $b;
     font-family: map-get($fonts, title );
 }
 
 .footer__title {
-    margin-top: 50px;
     margin-left: 10px;
-    font-size: 50px;
+    font-size: 48px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.contact {
+    width: 30%;
+    margin-inline: 85px;
+    position: absolute;
+    margin-top: 35px;
+}
+
+.contact__info {
+    margin-top: -24px;
+    margin-left: 60px;
+}
+
+.contact2 {
+    margin-top: 35px;
+    position: absolute;
+    margin-inline: 470px;
+}
+
+.contact__email {
+    @extend .contact__info; 
+}
+
+.faq {
+    @extend .contact;
+    margin-top: 100px;
+}
+
+.faq__link {
+    text-decoration: none;
+    font-family: map-get($fonts, title);
+    margin-top: -24px;
+    margin-left: 52px;
+    color: $Lgrey;
+        &:hover{
+            color:#00a5ff;
+        }
+}
+
+.box__map {
+    display: flex;
+    position: absolute;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+}
+
+.address__map {
+    margin-right: 88px;
+}
+
+.title__map {
+    margin-right: 50px;
 }
 
 .footer__subtitle {
-    margin-right:130px;
-    margin-top: -20px;
+    margin-right:179px;
     font-size: 17px;
     letter-spacing: 2px;
 }
 
 .footer__social {
-    display:flex;
+    display: flex;
     justify-content: end;
+    margin-top: 200px;
+    height: 60px;
+    padding-top: 8px;
+    border-top: 1px solid $Dgrey;
+    align-items: center;
 }
+
 
 footer { 
     article 
         a {
     margin-inline: 20px;
     padding-bottom: 5px;
-    transition: all 0.5s;
+    transition: all .3s;
         }
 }
 
-.footer__icons:hover {
-    @include YX(42px, 42px);
+.footer__social_icons {
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform:scale(1.2);
 }
-
+}
 
 
 /*INDEX*/
 
+.slider__box {
+    display: flex;
+    justify-content: end;
+    background-size: 100% 100%;
+    @include YX(259px, 100%);
+    margin-top: -55px;
+}
+
+.slider__brands {
+    @include YX(150px, 54%);
+    background-image: url(../assets/img/brandsBannerT.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: sliderBrands 15s infinite linear;
+    margin: 75px 25px 50px -25px;
+}
+
+.lastContent {
+    background: linear-gradient(157deg, rgba(189,189,189,1) 35%, rgba(143,143,143,1) 60%, rgba(0,0,0,1) 80%);
+}
+
 .maintitle {
-    margin: 180px 0px 80px 0px;
+    @include YX(80px, 100%);
     padding-top: 10px;
-    color: black;
+    color: $b;
     font-family: map-get($fonts, subtitle );
     font-size: 60px;
     letter-spacing: 6px;
     display: flex;
     justify-content: center;
-    background-color: $Lgrey;
+    background: linear-gradient(0.5turn, rgb(150, 150, 150) 0%, rgb(190, 190, 190)50%, rgb(105, 106, 106) 100%);
+}
+
+#first_subtitle {
+    margin-left: 30px;
 }
 
 .content_index {
-    background-image: linear-gradient(to bottom, $Lgrey, $w);
     color: $b; 
     font-family: map-get($map:$fonts, $key: content);
     font-size: medium;
     letter-spacing: 1px;
-    padding: 20px;
+    padding: 0px;
     display: grid;
     gap:50px;
     grid-template-columns: repeat(2,1fr);
@@ -285,65 +419,101 @@ footer {
     font-family: map-get($fonts, subtitle );
     font-size: 35px;
     position: absolute;
-    text-decoration: underline $Dgrey;
+    text-decoration: none;
+    margin-top: 20px;
 }   
+
 
 .first {
     grid-area: first;
     font-size: 36px;
     display: flex;
-    gap: 100px;
+    gap: 145px;
+    margin-top:-8px;
+    height: 540px;
+    background-color: #a2a2a2;
+    position: absolute;
 }
 
-.first_2 {
+.first__info {
     align-items: end;
-    margin-top: 150px;
+    margin: 75px 25px 25px 50px;
 }   
 
 .firstIMG {
     @include YX(370px, 420px);
-    margin-top: 60px;
+    margin: 85px 0px 0px 30px;
     border-radius: 10px;
+    box-shadow: $b 1px 5px 10px;
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform:scale(1.02);
+}
 }
 
 .second { 
     grid-area: second;
-    margin-top: -50px;
+    margin-top: -167px;
     margin-right: 40px;
-    font-size: 27px;
+    font-size: 26px;
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ff762e;
+    border-top: 13px solid $b;
+    height: 814px;
+}
+
+.second__info {
+    margin: 15px 50px 0px 50px;
 }
 
 .secondIMG {
     @include YX(320px, 350px);
     border-radius: 10px;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 87px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform:scale(1.02);
+    }
 }
 
 .third {
     grid-area: third;
-    margin-left: 40px;
-    font-size: 27px;
-    margin-top: -50px;
+    margin-left: -91px;
+    font-size: 26px;
+    margin-top: -167px;
+    border-top: 13px solid $b;
+    border-left: 12px solid $b;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #536975;
+    height: 814px;
+}
+
+.third__info {
+    margin: 15px 50px 100px 70px;
 }
 
 .thirdIMG {
     @include YX(320px, 350px);
     border-radius: 10px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-}
+    margin-top: 87px;
+    margin-bottom: 57px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform:scale(1.02);
+    }
+}   
 
-.tempTitle {
-    font-family: map-get($fonts, subtitle);
-    font-size: 30px;
-    margin-left: 50px;
+#bottomCarousel {
+    display:flex;
+    justify-content: center;
+    width:70%;  
 }
 
 
@@ -551,6 +721,7 @@ main
         position: absolute;
         margin: 90px 0px 0px 250px;
         font-size: 20px;
+        background-color: transparent;
     }
 
 
@@ -597,11 +768,12 @@ footer
 .first {
     flex-direction: column;
     gap: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     align-items: center;
     font-size: 27px;
 }
 
-.first_2 {
+.first__info {
     margin: 60px;
 }
 
@@ -613,9 +785,17 @@ footer
     margin-right: 0px;
 }
 
+.second__info {
+    margin: 18px;
+}
+
 .third {
     margin-top: -200px;
     margin-left: 0px;
+}
+
+.third__info {
+    margin: 18px;
 }
 
 .maintitle_second {
@@ -679,7 +859,8 @@ footer
 }
 
 .maintitle_third_mobile{
-    margin-left: 180px;    
+    margin-left: 180px;
+    margin-top: 180px;   
 }
 
 
@@ -793,9 +974,6 @@ form {
     font-size: 40px;
 }
 
-.grid_img {
-    @include YX(270px, 290px);
-}
 
 .grid_btn_style {
     margin-left: 0px;

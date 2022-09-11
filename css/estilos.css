@@ -1,63 +1,50 @@
 /*animaciones*/
-.animate__fadeInLeftBig {
-  animation-duration: 2.5s;
-}
-
-.animate__heartBeat {
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-}
-
-.animate__fadeIn {
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  animation-duration: 2s;
+.animate__backInUp {
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 .headertitle {
   animation-name: radiant;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes radiant {
   0% {
-    text-shadow: 1px 1px 4px black, 1px 1px 4px black;
-  }
-  10% {
-    text-shadow: 1px 1px 6px black, 1px 1px 6px black;
+    text-shadow: 0px 0px 0px black;
   }
   20% {
-    text-shadow: 1px 1px 8px black, 1px 1px 8px black;
-  }
-  30% {
-    text-shadow: 1px 1px 10px black, 1px 1px 10px black;
+    text-shadow: 3px 0px 0px whitesmoke;
   }
   40% {
-    text-shadow: 1px 1px 12px black, 1px 1px 12px black;
+    text-shadow: 0px 0px 0px whitesmoke;
+  }
+}
+@keyframes sliderBrands {
+  0% {
+    background-position: 900px;
+  }
+  25% {
+    background-position: 500px;
   }
   50% {
-    text-shadow: 1px 1px 14px black, 1px 1px 14px black;
+    background-position: 0px;
   }
-  60% {
-    text-shadow: 1px 1px 12px black, 1px 1px 12px black;
-  }
-  70% {
-    text-shadow: 1px 1px 10px black, 1px 1px 10px black;
-  }
-  80% {
-    text-shadow: 1px 1px 8px black, 1px 1px 8px black;
-  }
-  90% {
-    text-shadow: 1px 1px 6px black, 1px 1px 6px black;
+  75% {
+    background-position: -500px;
   }
   100% {
-    text-shadow: 1px 1px 4px black, 1px 1px 4px black;
+    background-position: -900px;
   }
 }
 /*STYLES GENERALES*/
+:root {
+  scrollbar-color: rgb(207, 205, 205) rgb(71, 71, 71);
+  scrollbar-width: thin;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -65,28 +52,34 @@
 }
 
 body {
-  background-color: rgb(238, 238, 238);
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
 
 header {
-  height: 260px;
+  height: 90px;
   width: 100%;
+  background-color: black;
 }
 
-.headerimg {
-  height: 260px;
+.parallaxTop, .parallaxMid {
+  height: 525px;
   width: 100%;
+  background-image: url(../assets/img/phone-city.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headertitle {
   color: whitesmoke;
-  margin: 5px 50px;
-  position: absolute;
-  font-family: "Edu NSW ACT Foundation";
-  font-size: 105px;
-  z-index: 1;
+  font-family: "Montserrat";
+  font-size: 55px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -101,8 +94,15 @@ header {
   font-size: 23px;
   text-decoration: none;
   --bs-navbar-nav-link-padding-x: 25px;
+  --bs-navbar-active-color: #adb5bd;
+  --bs-navbar-toggler-border-color: #ffffff00;
+  --bs-navbar-toggler-padding-y: 9px;
   z-index: 1;
-  --bs-navbar-active-color: grey;
+}
+
+.navbar-toggler-icon {
+  height: 20px;
+  width: 30px;
 }
 
 nav ul {
@@ -111,43 +111,50 @@ nav ul {
   list-style-type: none;
 }
 
-.eslogan {
-  margin-right: 60px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.bg-dark {
+  --bs-bg-opacity: 0.8;
+}
+
+.eslogan, .eslogan__second {
   color: black;
-  font-family: "Splash";
+  font-family: "Montserrat";
   font-size: 25px;
   letter-spacing: 3px;
   display: flex;
-  justify-content: end;
-  background-color: rgb(238, 238, 238);
-  text-shadow: 0px 1px 10px black;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  text-shadow: 3px 3px 5px black;
+  height: 525px;
+  font-weight: bold;
 }
 
-.btn_display {
+.btn__display {
   display: flex;
   justify-content: space-evenly;
+  height: 65px;
+  margin-top: 40px;
 }
 
-.btn_style, .btn-primary {
+.btn__style, .btn-primary {
   height: 45px;
   width: 160px;
   color: whitesmoke;
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0.9);
   font-family: "Bebas Neue";
-  border-radius: 3px;
+  border-radius: 25px;
   font-size: 20px;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
+  box-shadow: black 1px 1px 5px;
+  border: 0px;
   transition: all 0.5s;
 }
-.btn_style:hover, .btn-primary:hover {
+.btn__style:hover, .btn-primary:hover {
   background-color: rgb(175, 175, 175);
   color: black;
-  border: 1px solid black;
 }
 
 .btn-primary {
@@ -164,11 +171,23 @@ nav ul {
   --bs-btn-border-radius: 3px;
 }
 
+main div section article div div {
+  position: relative;
+}
+
 .card {
   --bs-card-spacer-y: 3rem;
 }
 
+.card-text {
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+}
+
 .card-img-top {
+  z-index: 2;
+  position: relative;
   height: 240px;
   width: 250px;
   margin-top: 20px;
@@ -203,25 +222,85 @@ nav ul {
   letter-spacing: 1px;
 }
 
+.parallaxMid {
+  height: 650px;
+  width: 100%;
+  background-image: url(../assets/img/boxmarket.jpg);
+}
+
+.eslogan__second {
+  height: 200px;
+  width: 100%;
+}
+
 /*FOOTER*/
 .footer__style {
-  height: 110px;
+  height: 340px;
   width: 100%;
-  margin-top: 200px;
   color: rgb(207, 205, 205);
   background-color: black;
-  font-family: "Edu NSW ACT Foundation";
+  font-family: "Montserrat";
 }
 
 .footer__title {
-  margin-top: 50px;
   margin-left: 10px;
-  font-size: 50px;
+  font-size: 48px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.contact, .faq {
+  width: 30%;
+  margin-inline: 85px;
+  position: absolute;
+  margin-top: 35px;
+}
+
+.contact__info, .contact__email {
+  margin-top: -24px;
+  margin-left: 60px;
+}
+
+.contact2 {
+  margin-top: 35px;
+  position: absolute;
+  margin-inline: 470px;
+}
+
+.faq {
+  margin-top: 100px;
+}
+
+.faq__link {
+  text-decoration: none;
+  font-family: "Montserrat";
+  margin-top: -24px;
+  margin-left: 52px;
+  color: rgb(207, 205, 205);
+}
+.faq__link:hover {
+  color: #00a5ff;
+}
+
+.box__map {
+  display: flex;
+  position: absolute;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+}
+
+.address__map {
+  margin-right: 88px;
+}
+
+.title__map {
+  margin-right: 50px;
 }
 
 .footer__subtitle {
-  margin-right: 130px;
-  margin-top: -20px;
+  margin-right: 179px;
   font-size: 17px;
   letter-spacing: 2px;
 }
@@ -229,22 +308,53 @@ nav ul {
 .footer__social {
   display: flex;
   justify-content: end;
+  margin-top: 200px;
+  height: 60px;
+  padding-top: 8px;
+  border-top: 1px solid rgb(113, 113, 113);
+  align-items: center;
 }
 
 footer article a {
   margin-inline: 20px;
   padding-bottom: 5px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
-.footer__icons:hover {
-  height: 42px;
-  width: 42px;
+.footer__social_icons {
+  transition: all 0.2s ease-in-out;
+}
+.footer__social_icons:hover {
+  transform: scale(1.2);
 }
 
 /*INDEX*/
+.slider__box {
+  display: flex;
+  justify-content: end;
+  background-size: 100% 100%;
+  height: 259px;
+  width: 100%;
+  margin-top: -55px;
+}
+
+.slider__brands {
+  height: 150px;
+  width: 54%;
+  background-image: url(../assets/img/brandsBannerT.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: sliderBrands 15s infinite linear;
+  margin: 75px 25px 50px -25px;
+}
+
+.lastContent {
+  background: linear-gradient(157deg, rgb(189, 189, 189) 35%, rgb(143, 143, 143) 60%, rgb(0, 0, 0) 80%);
+}
+
 .maintitle {
-  margin: 180px 0px 80px 0px;
+  height: 80px;
+  width: 100%;
   padding-top: 10px;
   color: black;
   font-family: "Bebas Neue";
@@ -252,16 +362,19 @@ footer article a {
   letter-spacing: 6px;
   display: flex;
   justify-content: center;
-  background-color: rgb(207, 205, 205);
+  background: linear-gradient(0.5turn, rgb(150, 150, 150) 0%, rgb(190, 190, 190) 50%, rgb(105, 106, 106) 100%);
+}
+
+#first_subtitle {
+  margin-left: 30px;
 }
 
 .content_index {
-  background-image: linear-gradient(to bottom, rgb(207, 205, 205), whitesmoke);
   color: black;
-  font-family: "Alumni Sans Pinstripe";
+  font-family: "Alumni Sans";
   font-size: medium;
   letter-spacing: 1px;
-  padding: 20px;
+  padding: 0px;
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(2, 1fr);
@@ -273,68 +386,103 @@ footer article a {
   font-family: "Bebas Neue";
   font-size: 35px;
   position: absolute;
-  text-decoration: underline rgb(113, 113, 113);
+  text-decoration: none;
+  margin-top: 20px;
 }
 
 .first {
   grid-area: first;
   font-size: 36px;
   display: flex;
-  gap: 100px;
+  gap: 145px;
+  margin-top: -8px;
+  height: 540px;
+  background-color: #a2a2a2;
+  position: absolute;
 }
 
-.first_2 {
+.first__info {
   align-items: end;
-  margin-top: 150px;
+  margin: 75px 25px 25px 50px;
 }
 
 .firstIMG {
   height: 370px;
   width: 420px;
-  margin-top: 60px;
+  margin: 85px 0px 0px 30px;
   border-radius: 10px;
+  box-shadow: black 1px 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+.firstIMG:hover {
+  transform: scale(1.02);
 }
 
 .second {
   grid-area: second;
-  margin-top: -50px;
+  margin-top: -167px;
   margin-right: 40px;
-  font-size: 27px;
+  font-size: 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ff762e;
+  border-top: 13px solid black;
+  height: 814px;
+}
+
+.second__info {
+  margin: 15px 50px 0px 50px;
 }
 
 .secondIMG {
   height: 320px;
   width: 350px;
   border-radius: 10px;
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 87px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+.secondIMG:hover {
+  transform: scale(1.02);
 }
 
 .third {
   grid-area: third;
-  margin-left: 40px;
-  font-size: 27px;
-  margin-top: -50px;
+  margin-left: -91px;
+  font-size: 26px;
+  margin-top: -167px;
+  border-top: 13px solid black;
+  border-left: 12px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #536975;
+  height: 814px;
+}
+
+.third__info {
+  margin: 15px 50px 100px 70px;
 }
 
 .thirdIMG {
   height: 320px;
   width: 350px;
   border-radius: 10px;
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 87px;
+  margin-bottom: 57px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+.thirdIMG:hover {
+  transform: scale(1.02);
 }
 
-.tempTitle {
-  font-family: "Bebas Neue";
-  font-size: 30px;
-  margin-left: 50px;
+#bottomCarousel {
+  display: flex;
+  justify-content: center;
+  width: 70%;
 }
 
 /*STREET*/
@@ -513,10 +661,11 @@ main form button {
   .navbar-toggler {
     margin: -5px;
   }
-  .eslogan {
+  .eslogan, .eslogan__second {
     position: absolute;
     margin: 90px 0px 0px 250px;
     font-size: 20px;
+    background-color: transparent;
   }
   /*footer*/
   .footer__style {
@@ -545,10 +694,11 @@ main form button {
   .first {
     flex-direction: column;
     gap: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     align-items: center;
     font-size: 27px;
   }
-  .first_2 {
+  .first__info {
     margin: 60px;
   }
   .btn_display {
@@ -557,9 +707,15 @@ main form button {
   .second {
     margin-right: 0px;
   }
+  .second__info {
+    margin: 18px;
+  }
   .third {
     margin-top: -200px;
     margin-left: 0px;
+  }
+  .third__info {
+    margin: 18px;
   }
   .maintitle_second, .maintitle_third {
     margin-top: -220px;
@@ -603,6 +759,7 @@ main form button {
   }
   .maintitle_third_mobile {
     margin-left: 180px;
+    margin-top: 180px;
   }
   /*contacto*/
   .contactIMG {
@@ -625,7 +782,7 @@ main form button {
   .navbar-toggler {
     margin: -5px;
   }
-  .eslogan {
+  .eslogan, .eslogan__second {
     position: absolute;
     margin: 90px 0px 0px 350px;
     font-size: 22px;
@@ -678,10 +835,6 @@ main form button {
   }
   .content_subtitle {
     font-size: 40px;
-  }
-  .grid_img {
-    height: 270px;
-    width: 290px;
   }
   .grid_btn_style {
     margin-left: 0px;
