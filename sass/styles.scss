@@ -208,14 +208,8 @@ main {
     --bs-card-spacer-y: 3rem;
 }
 
-.card-text {
-    z-index: 1;
-    opacity: 0; 
-    position:absolute;
-}
 
 .card-img-top {
-    z-index: 2;
     position: relative;
     @include YX(240px, 250px);
     margin-top: 20px;
@@ -238,18 +232,18 @@ main {
 
 .maintitle_third {
     @extend .maintitle_second;
-    margin-left: 360px;
-    margin-bottom: 100px;
-    margin-top: 30px;
+    margin-left: 700px;
+    margin-bottom: -20px;   
+    margin-top: 35px;
     font-size: 35px;
-    background-color: $Dgrey;
+    background-color: rgb(113, 113, 113);
 }
 
 
 .content_subtitle {
     font-size: 25px;
     position: absolute;
-    text-decoration: underline grey;
+    text-decoration: none;
     letter-spacing: 1px;
 }
 
@@ -262,6 +256,10 @@ main {
 .eslogan__second {
     @extend .eslogan;
     @include YX(200px, 100%);
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 10px;
 }
 
 /*FOOTER*/
@@ -511,23 +509,21 @@ footer {
 
 /*STREET*/
 
+.parallaxTop__street {
+    @extend .parallaxTop;
+    height: 320px;
+    background-image: url(../assets/img/womanGadget1.jpg);
+}
+
+
+
 .flex-container {
     display:flex;
     justify-content: space-around;
-}
-
-
-.content_street_header {
-    @include YX(330px, 100%px);
-    background-image: url(../assets/img/smartwrist_cut.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: map-get($fonts, subtitle);
-    font-size: 35px;
-    margin-top:180px;
+    margin-top: 50px;
     margin-bottom: 100px;
-    color: $b;
 }
+
 
 .content_street {
     color: $b;
@@ -542,18 +538,21 @@ footer {
 
 /*OUTDOOR*/
 
-.content_outdoor_header {
-    @include YX(330px, 100%px);
-    background-image: url(../assets/img/silhouette_drone.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 1px;
-    font-family: map-get($fonts, subtitle);
-    font-size: 35px;
-    margin-top:180px;
-    margin-bottom: 100px;
-    color: $b;
+.parallaxTop__outdoor {
+    @extend .parallaxTop;
+    height: 320px;
+    background-image: url(../assets/img/silhouette_drone1.jpg);
 }
+
+
+.eslogan__outdoor {
+    @extend .eslogan;
+    margin-left: 50px;
+    padding-bottom: 210px;
+    justify-content: start;
+    text-shadow: 10px 10px 4px $b;
+}
+
 
 .content_outdoor {
     color: $b;
@@ -569,6 +568,19 @@ footer {
 
 /*REVIEWS*/
 
+.parallaxTop__reviews {
+    @extend .parallaxTop;
+    height: 320px;
+    background-image: url(../assets/img/reviews.jpg);
+}
+
+.eslogan__reviews {
+    @extend .eslogan;
+    margin-left:120px;
+    padding-bottom: 210px;
+    justify-content: start;
+    text-shadow: 10px 10px 4px $b;
+}
 
 .content_reviews {
     color: $b;
@@ -580,6 +592,7 @@ footer {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     row-gap: 60px;
+    margin-bottom: 100px;
 }
 
 .reviews_grid_style {
@@ -590,22 +603,24 @@ footer {
 
 .iframes_reviews {
     @include YX(220px, 400px);
-    margin: 70px 0px 25px 0px;
+    margin: 35px 0px 25px 0px;
     border: 5px groove rgb(230, 230, 230);
     border-radius: 3px;
 }
 
-
-
+.btn_reviews {
+    width: 150px;
+}
 
 /*CONTACTO*/
+
 .contact__style {
     background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(83,105,117,1) 90%);
 }
 
 .parallaxTop__contact {
     @extend .parallaxTop;
-    height: 350px;
+    height: 320px;
     background-image: url(../assets/img/typingL2.jpg);
 }
 
@@ -902,7 +917,7 @@ footer
 
 .maintitle_third_mobile{
     margin-left: 180px;
-    margin-top: 180px;   
+    margin-top: 80px;   
 }
 
 
