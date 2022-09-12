@@ -11,6 +11,10 @@
 }
 
 
+.animate__fadeInLeft {
+    @extend .animate__backInUp;
+}
+
 .headertitle {
     animation-name: radiant;    
     animation-duration: 4s;
@@ -105,6 +109,11 @@ header {
     --bs-navbar-toggler-border-color: #ffffff00;
     --bs-navbar-toggler-padding-y: 9px;
     z-index:1;
+}
+
+.navbarUniversal {
+    @extend .navbar;
+    margin-top: 5px;
 }
 
 .navbar-toggler-icon {
@@ -247,7 +256,7 @@ main {
 .parallaxMid {
     @extend .parallaxTop;
     @include YX(650px, 100%);
-    background-image: url(../assets/img/boxmarket.jpg);
+    background-image: url(../assets/img/boxmarketOk.jpg);
 }
 
 .eslogan__second {
@@ -362,23 +371,6 @@ footer {
 
 
 /*INDEX*/
-
-.slider__box {
-    display: flex;
-    justify-content: end;
-    background-size: 100% 100%;
-    @include YX(259px, 100%);
-    margin-top: -55px;
-}
-
-.slider__brands {
-    @include YX(150px, 54%);
-    background-image: url(../assets/img/brandsBannerT.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: sliderBrands 15s infinite linear;
-    margin: 75px 25px 50px -25px;
-}
 
 .lastContent {
     background: linear-gradient(157deg, rgba(189,189,189,1) 35%, rgba(143,143,143,1) 60%, rgba(0,0,0,1) 80%);
@@ -607,48 +599,98 @@ footer {
 
 
 /*CONTACTO*/
-
-
-form {
-    @include YX(600px, 450px);
-    font-family: map-get($fonts, subtitle);
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: $w;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    border: 4px solid rgb(70, 70, 70);
-    margin-top: 50px;
-    margin-left: 30px;
-    padding: 8px;
-    background-image: linear-gradient(to bottom, rgb(75, 75, 75), $w);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -12px;
+.contact__style {
+    background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(83,105,117,1) 90%);
 }
 
+.parallaxTop__contact {
+    @extend .parallaxTop;
+    height: 350px;
+    background-image: url(../assets/img/typingL2.jpg);
+}
 
-.contact_title {
-    font-size: 22px; 
-    display: flex;
+.eslogan__contact {
+    @extend .eslogan;
+    margin-left: 285px;
+    padding-bottom: 210px;
+    justify-content: start;
+    text-shadow: 10px 10px 4px $b;
+}
+
+form {
+@include YX(550px, 70%);
+font-family: map-get($fonts , form);
+font-size: 1.1rem;
+letter-spacing: 1px;
+color: $Lgrey;
+padding: 20px;
+margin: 100px 0px 200px 0px;
+background-image: url(../assets/img/pPlain.png);
+background-position: center;
+background-size: cover; 
+box-shadow: rgba(0, 0, 0, 0.4)10px 10px 5px;
+padding-bottom: 5px;
+}
+
+.msg__title {
+    display:flex;
     justify-content: center;
+    font-size: 1rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px $b;
+    margin-top:50px;
+}
+
+.userMsg {
+    font-family: map-get($fonts , form);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: $b;
+    padding: 5px;
+    opacity: 0.5;
+    width: 100%;
+    transition: all 0.5s;
+        &:hover {
+            background-color: $Lgrey;
+            opacity: 1;
+        }
+}
+
+.form-control {
+    width: 70%;
+    font-size: 1rem;
+    font-weight:300;
+    margin-bottom:15px;
+    transition: all 0.5s;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+        background-color: $Lgrey;
+    }
 }
 
 main 
     form 
         input {
-        height: 25px;
+        height: 40px;
 }
 
 main
     form
         button {
-        height: 30px;
-        font-family: map-get($fonts, subtitle);
-        font-size: 18px;
-        background-color: $Dgrey;
-        color: $w;
+        height: 33px;
+        font-family: map-get($fonts , form );
+        font-size: 1.1rem;
+        color: $b;
+        width: 100px;
+        opacity: 0.5;
+        border: none;
+        transition: all 0.5s;
+            &:hover {
+                opacity: 1;
+                background-color: $Lgrey;
+            }
+
 }   
 
 .contact_main {
