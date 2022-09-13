@@ -680,7 +680,7 @@ main form button:hover {
 @media only screen and (max-width: 576px) {
   /**gral**/
   header {
-    height: 200px;
+    height: 90px;
     width: 100%;
   }
   .headerimg {
@@ -688,8 +688,7 @@ main form button:hover {
     width: 100%;
   }
   .headertitle {
-    margin: 20px 10px;
-    font-size: 80px;
+    font-size: 50px;
   }
   .navbar, .navbarUniversal {
     margin-top: 5px;
@@ -702,6 +701,9 @@ main form button:hover {
   .navbar-toggler {
     margin: -5px;
   }
+  .nav-item {
+    color: black;
+  }
   .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
     position: absolute;
     margin: 90px 0px 0px 250px;
@@ -710,22 +712,52 @@ main form button:hover {
   }
   /*footer*/
   .footer__style {
-    height: 119px;
+    height: 305px;
   }
   .footer__subtitle {
     margin-right: 93px;
     margin-top: 8px;
   }
+  .contact, .faq {
+    margin-top: 15px;
+    margin-inline: 20px;
+    width: 50%;
+  }
+  .contact2 {
+    margin-top: 13px;
+    margin-inline: 340px;
+  }
+  .faq {
+    margin-top: 90px;
+    margin-inline: 20px;
+    width: 50%;
+  }
   .footer__social {
-    margin-top: 22px;
+    margin-top: 165px;
   }
   .footer_title {
-    font-size: 45px;
+    font-size: 40px;
+  }
+  .box__map {
+    display: none;
   }
   footer article a {
     margin-inline: 12px;
   }
   /*index*/
+  .parallaxTop__index_mobile {
+    height: 250px;
+    background-attachment: unset;
+  }
+  .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
+    margin: 0;
+    padding-bottom: 250px;
+    padding-left: 100px;
+  }
+  .firstIMG {
+    height: 350px;
+    width: 375px;
+  }
   .content_index {
     gap: 100px;
     grid-template-columns: 1fr;
@@ -737,7 +769,8 @@ main form button:hover {
     gap: 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     align-items: center;
-    font-size: 27px;
+    font-size: 23px;
+    height: 710px;
   }
   .first__info {
     margin: 60px;
@@ -747,6 +780,9 @@ main form button:hover {
   }
   .second {
     margin-right: 0px;
+    margin-top: -115px;
+    height: 832px;
+    font-size: 23px;
   }
   .second__info {
     margin: 18px;
@@ -754,6 +790,9 @@ main form button:hover {
   .third {
     margin-top: -200px;
     margin-left: 0px;
+    font-size: 23px;
+    height: 825px;
+    border-left: 0px;
   }
   .third__info {
     margin: 18px;
@@ -761,6 +800,13 @@ main form button:hover {
   .maintitle_second, .maintitle_third {
     margin-top: -220px;
     margin-left: 150px;
+  }
+  .parallaxMid {
+    margin-top: -92px;
+  }
+  .eslogan__second {
+    padding-bottom: 50px;
+    padding-left: 60px;
   }
   /*street*/
   .content_street_header {
@@ -782,6 +828,10 @@ main form button:hover {
     margin-bottom: 70px;
   }
   /*outdoor*/
+  .eslogan__outdoor {
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
   .content_outdoor_header {
     height: 280px;
   }
@@ -790,6 +840,10 @@ main form button:hover {
     grid-template-rows: repeat(4, 1fr);
   }
   /*reviews*/
+  .eslogan__reviews {
+    padding-bottom: 150px;
+    padding-left: 230px;
+  }
   .content_reviews {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -808,6 +862,10 @@ main form button:hover {
   }
   form {
     width: 520px;
+  }
+  .eslogan__contact {
+    padding-bottom: 100px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 768px) and (min-width: 577px) {

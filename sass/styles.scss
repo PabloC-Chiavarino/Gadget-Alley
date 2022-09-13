@@ -745,7 +745,7 @@ main
 /**gral**/
         
     header {
-        @include YX(200px, 100%);
+        @include YX(90px, 100%);
     }
     
     .headerimg {
@@ -753,8 +753,7 @@ main
     }
         
     .headertitle {
-        margin: 20px 10px;
-        font-size: 80px; 
+        font-size: 50px; 
     }
 
     .navbar {
@@ -762,18 +761,22 @@ main
         width: 100%;
     }
 
+
     nav 
         ul 
             li 
                 a {
                     font-size: 18px;
                     padding-inline: 18px;
-    }
+                }
 
     .navbar-toggler {
         margin: -5px;
     }
 
+    .nav-item{ 
+    color: $b;
+}
     .eslogan {
         position: absolute;
         margin: 90px 0px 0px 250px;
@@ -782,11 +785,10 @@ main
     }
 
 
-
 /*footer*/
 
 .footer__style {
-    height: 119px;
+    height: 305px;
 }
 
 .footer__subtitle {
@@ -794,12 +796,33 @@ main
     margin-top: 8px;
 }
 
+.contact {
+    margin-top:15px;
+    margin-inline: 20px;
+    width: 50%;
+}
+
+.contact2 {
+    margin-top:13px;
+    margin-inline: 340px;
+}
+
+.faq {
+    margin-top: 90px;
+    margin-inline: 20px;
+    width: 50%;
+}
+
 .footer__social {
-    margin-top: 22px;
+    margin-top: 165px;
 }
 
 .footer_title {
-    font-size: 45px;
+    font-size: 40px;
+}
+
+.box__map {
+    display: none;
 }
 
 footer
@@ -810,6 +833,21 @@ footer
 
 
 /*index*/
+
+.parallaxTop__index_mobile {
+    height: 250px;
+    background-attachment:unset;
+}
+
+.eslogan{
+    margin: 0;
+    padding-bottom: 250px;
+    padding-left: 100px;
+}
+
+.firstIMG {
+    @include YX(350px, 375px);
+}
 
 .content_index {
     gap: 100px;
@@ -827,7 +865,8 @@ footer
     gap: 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     align-items: center;
-    font-size: 27px;
+    font-size: 23px;
+    height: 710px;
 }
 
 .first__info {
@@ -840,6 +879,10 @@ footer
 
 .second {
     margin-right: 0px;
+    margin-top: -115px;
+    height: 832px;
+    font-size: 23px;
+
 }
 
 .second__info {
@@ -849,6 +892,9 @@ footer
 .third {
     margin-top: -200px;
     margin-left: 0px;
+    font-size: 23px;
+    height: 825px;
+    border-left: 0px;
 }
 
 .third__info {
@@ -860,7 +906,14 @@ footer
     margin-left: 150px;
 }
 
+.parallaxMid {
+    margin-top: -92px;
+}
 
+.eslogan__second {
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
 
 /*street*/
 
@@ -890,6 +943,10 @@ footer
 
 /*outdoor*/
 
+.eslogan__outdoor {
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
 
 .content_outdoor_header {
     height: 280px;
@@ -904,6 +961,11 @@ footer
 
 
 /*reviews*/
+
+.eslogan__reviews {
+    padding-bottom: 150px;
+    padding-left: 230px;
+}
 
 .content_reviews {
     grid-template-columns: 1fr;
@@ -932,6 +994,10 @@ form {
     width: 520px;
 }
 
+.eslogan__contact {
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
 
 }
 
