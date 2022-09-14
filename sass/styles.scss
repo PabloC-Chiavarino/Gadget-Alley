@@ -133,21 +133,6 @@ nav {
 }
 
 
-
-.eslogan {
-    color: $b;
-    font-family: map-get($fonts, title);
-    font-size: 25px;
-    letter-spacing: 3px;    
-    display: flex;              
-    justify-content: center;
-    align-items:center;
-    background-color:transparent;
-    text-shadow: 3px 3px 5px $b;
-    height: 525px;
-    font-weight: bold;
-}
-
 .btn__display {
     display: flex;
     justify-content: space-evenly;
@@ -206,6 +191,7 @@ main {
 
 .card {
     --bs-card-spacer-y: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 10px;
 }
 
 
@@ -215,52 +201,6 @@ main {
     margin-top: 20px;
     }
 
-
-.maintitle_second {
-    margin-top: 180px;
-    margin-left: 230px;
-    margin-bottom: 50px;
-    font-family: map-get($fonts, subtitle);
-    font-size: 45px;
-    background-color: $Lgrey;
-    color: $b;
-    padding-left: 6px;
-    width: 100%;
-    letter-spacing: 2px;
-    border: 2px groove $b;
-}
-
-.maintitle_third {
-    @extend .maintitle_second;
-    margin-left: 700px;
-    margin-bottom: -20px;   
-    margin-top: 35px;
-    font-size: 35px;
-    background-color: rgb(113, 113, 113);
-}
-
-
-.content_subtitle {
-    font-size: 25px;
-    position: absolute;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-.parallaxMid {
-    @extend .parallaxTop;
-    @include YX(650px, 100%);
-    background-image: url(../assets/img/boxmarketOk.jpg);
-}
-
-.eslogan__second {
-    @extend .eslogan;
-    @include YX(200px, 100%);
-}
-
-.card {
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 10px;
-}
 
 /*FOOTER*/
 
@@ -385,6 +325,32 @@ footer {
     justify-content: center;
     background: linear-gradient(0.5turn, rgb(150, 150, 150) 0%, rgb(190, 190, 190)50%, rgb(105, 106, 106) 100%);
 }
+
+.eslogan {
+    color: $b;
+    font-family: map-get($fonts, title);
+    font-size: 25px;
+    letter-spacing: 3px;    
+    display: flex;              
+    justify-content: center;
+    align-items:center;
+    background-color:transparent;
+    text-shadow: 3px 3px 5px $b;
+    height: 525px;
+    font-weight: bold;
+}
+
+.parallaxMid {
+    @extend .parallaxTop;
+    @include YX(650px, 100%);
+    background-image: url(../assets/img/boxmarketOk.jpg);
+}
+
+.eslogan__second {
+    @extend .eslogan;
+    @include YX(200px, 100%);
+}
+
 
 #first_subtitle {
     margin-left: 30px;
@@ -515,8 +481,6 @@ footer {
     background-image: url(../assets/img/womanGadget1.jpg);
 }
 
-
-
 .flex-container {
     display:flex;
     justify-content: space-around;
@@ -582,8 +546,23 @@ footer {
     text-shadow: 10px 10px 4px $b;
 }
 
+.maintitle_third {
+    margin-left: 700px;
+    margin-bottom: -20px;   
+    margin-top: 35px;
+    font-size: 35px;
+    background-color: rgb(113, 113, 113);
+    font-family: map-get($fonts, subtitle);
+    color: $b;
+    padding-left: 6px;
+    width: 100%;
+    letter-spacing: 2px;
+    border: 1px solid $b;
+}
+
 .content_reviews {
     color: $b;
+    text-align: center;
     font-family: map-get($fonts, subtitle);
     font-size: medium;
     padding: 30px;
@@ -599,6 +578,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content_subtitle {
+    font-size: 25px;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: -30px;
 }
 
 .iframes_reviews {
@@ -744,21 +731,17 @@ main
 
 /**gral**/
         
-    header {
-        @include YX(90px, 100%);
-    }
-    
-    .headerimg {
-        @include YX(200px, 100%);
-    }
-        
     .headertitle {
         font-size: 50px; 
     }
 
     .navbar {
-        margin-top: 5px;
+        margin-top: 0px;
         width: 100%;
+    }
+
+    .bg-dark {
+        --bs-bg-opacity: 0.8;
     }
 
 
@@ -774,26 +757,18 @@ main
         margin: -5px;
     }
 
-    .nav-item{ 
-    color: $b;
-}
-    .eslogan {
-        position: absolute;
-        margin: 90px 0px 0px 250px;
-        font-size: 20px;
-        background-color: transparent;
+    .navbar-toggler-icon {
+        margin-bottom: 0px;
     }
 
+    .nav-link {
+        --bs-navbar-active-color: #222;
+    }
 
 /*footer*/
 
 .footer__style {
     height: 305px;
-}
-
-.footer__subtitle {
-    margin-right: 93px;
-    margin-top: 8px;
 }
 
 .contact {
@@ -802,9 +777,14 @@ main
     width: 50%;
 }
 
+.contact__info {
+    margin-top: -24px;
+    margin-left: 40px;
+}
+
 .contact2 {
     margin-top:13px;
-    margin-inline: 340px;
+    margin-inline: 330px;
 }
 
 .faq {
@@ -813,11 +793,16 @@ main
     width: 50%;
 }
 
+.footer__subtitle {
+    margin-right: 60px;
+    margin-top: 8px;
+}
+
 .footer__social {
     margin-top: 165px;
 }
 
-.footer_title {
+.footer__title {
     font-size: 40px;
 }
 
@@ -834,15 +819,19 @@ footer
 
 /*index*/
 
-.parallaxTop__index_mobile {
+.parallaxTop {
     height: 250px;
     background-attachment:unset;
 }
 
-.eslogan{
+.eslogan {
     margin: 0;
-    padding-bottom: 250px;
-    padding-left: 100px;
+    height: 270px;
+    font-size: 20px;
+}
+
+.maintitle {
+    font-size: 55px;
 }
 
 .firstIMG {
@@ -867,6 +856,14 @@ footer
     align-items: center;
     font-size: 23px;
     height: 710px;
+}
+
+.firstIMG {
+    margin: 75px 45px 0px 45px;
+}
+
+#first_subtitle {
+    margin-left: 0px;
 }
 
 .first__info {
@@ -907,19 +904,18 @@ footer
 }
 
 .parallaxMid {
-    margin-top: -92px;
+    background-attachment: fixed;
+    height: 450px;
+    margin-top: -93px;
 }
 
 .eslogan__second {
-    padding-bottom: 50px;
-    padding-left: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    font-size: 16px;
 }
 
 /*street*/
-
-.content_street_header {
-    height: 280px;
-}
 
 .content_street {
     grid-template-columns: 1fr;
@@ -963,13 +959,14 @@ footer
 /*reviews*/
 
 .eslogan__reviews {
-    padding-bottom: 150px;
-    padding-left: 230px;
+    padding-bottom: 168px;
+    padding-left: 35px;
 }
 
 .content_reviews {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
+    text-align: center;
 }
 
 .maintitle_second_mobile {
@@ -977,18 +974,20 @@ footer
     margin-left: 100px;
 }
 
-.maintitle_third_mobile{
+.maintitle_third{
     margin-left: 180px;
-    margin-top: 80px;   
+    margin-top: 50px;   
 }
 
+.content_subtitle {
+    position: unset;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: -20px;
+    margin-top: 30px;
+}
 
 /*contacto*/
-
-
-.contactIMG {
-    display: none;
-}
 
 form {
     width: 520px;
@@ -1006,7 +1005,7 @@ form {
 /*GRAL*/
 
     .navbar {
-        margin-top: 5px;
+        margin-top: 0px;
         width: 100%;
     }
 
@@ -1018,8 +1017,22 @@ form {
                 padding-inline: 18px;
     }
 
+    .bg-dark {
+        --bs-bg-opacity: 0.8;
+    }
+    
+
     .navbar-toggler {
         margin: -5px;
+    }
+
+    .navbar-toggler-icon {
+        margin-bottom: 0px;
+        
+    }
+
+    .nav-link {
+        --bs-navbar-active-color: #222;
     }
 
     .eslogan {
@@ -1031,18 +1044,90 @@ form {
 
 /*footer*/
 
-    .footer__subtitle {
-        margin-right: 33px;
-        margin-top: 20px;
-    }
+.footer__style {
+    height: 318px;
+}
 
-    .footer__style {
-        height: 117px;
-    }
+.contact {
+    margin-top:15px;
+    margin-inline: 20px;
+    width: 50%;
+}
+
+.contact__info {
+    margin-top: -24px;
+    margin-left: 40px;
+}
+
+.contact2 {
+    margin-top:13px;
+    margin-inline: 430px;
+}
+
+.faq {
+    margin-top: 90px;
+    margin-inline: 20px;
+    width: 50%;
+}
+
+.faq__link {
+    margin-left: 15px;
+}
+
+.footer__subtitle {
+    margin-right: 100px;
+    margin-top: 8px;
+}
+
+.footer__social {
+    margin-top: 177px;
+}
+
+.footer__title {
+    font-size: 51px;
+    padding-top: 17px;
+}
+
+.title__map {
+    margin-right:45px;
+}
+
+.box__map {
+    display:none;
+}
+
+footer
+    article
+        a {
+        margin-inline: 12px;
+}
+
 
 /*index*/
 
-    .content_index {
+.header {
+    height: 95px;
+}
+
+.headertitle {
+    font-size: 57px;
+}    
+
+.eslogan {
+    margin: 0;
+    height: 440px;
+    font-size: 20px;
+    position: unset;
+    font-size: 21px;
+}
+
+.parallaxTop {
+    height: 440px;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.content_index {
         gap: 100px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
@@ -1058,8 +1143,17 @@ form {
         font-size: 27px;
         gap: 0px;
         align-items: center;
+        height: 848px;
     }
     
+    .firstIMG {
+        margin: 80px 0px 0px 0px;
+    }
+
+    #first_subtitle {
+        margin-left: 0px;
+    }
+
     .first_2 {
         margin: 60px;
     }
@@ -1071,17 +1165,33 @@ form {
     
     .second {
         margin-right: 0px;
+        height: 912px;
+        margin-top: -86px;
     }
     
     .third {
         margin-top: -200px;
         margin-left: 0px;
+        border-left: 0px;
+        height: 933px;
     }
+
+    .parallaxMid {
+    background-attachment: fixed;
+    height: 550px;
+    margin-top: -93px;
+}
 
 /*street*/
 
-.content_street_header {
-    height: 280px;
+.parallaxTop__street {
+    height: 300px;
+}
+
+.eslogan__contact {
+    height: 300px;
+    padding-top: 200px;
+    padding-left: 80px;
 }
 
 .content_street {
@@ -1106,9 +1216,17 @@ form {
 
 /*outdoor*/
 
-.content_outdoor_header {
-    height: 280px;
+.parallaxTop__outdoor {
+    height: 300px;
+    background-position: unset;
 }
+
+.eslogan__outdoor {
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 200px;
+}
+
 
 .content_outdoor {
     gap: 10px;
@@ -1121,13 +1239,29 @@ form {
 
 /*reviews*/
 
-.iframes_reviews {
-    @include YX(300px, 80%);
+
+.parallaxTop__reviews {
+    height: 300px;
+    background-position: center;
 }
+
+.eslogan__reviews {
+    height: 300px;
+    padding-left: 65px;
+    padding-top: 200px;
+}
+
 
 .content_reviews {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
+    text-align: center;
+}
+
+.iframes_reviews {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 50px;
 }
 
 .maintitle_second_mobile {
@@ -1135,20 +1269,336 @@ form {
     margin-left: 100px;
 }
 
-.maintitle_third_mobile{
-    margin-left: 180px;    
+.maintitle_third{
+    margin-left: 180px;
+    margin-top: 50px;   
 }
 
+.content_subtitle {
+    position: unset;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: -20px;
+    margin-top: 30px;
+    font-size: 35px;
+}
 
 /*contacto*/
 
 
-.contactIMG {
-    display: none;
+.parallaxTop__contact {
+    height: 300px;
+    background-position: center;
 }
 
 form {
-    width: 650px;
+    width: 520px;
 }
+
+.eslogan__contact {
+    padding-bottom: 100px;
+    padding-left: 65px;
+}
+
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+/*GRAL*/
+
+.navbar {
+    margin-top: -45px;
+    width: 100%;
+}
+
+nav
+    ul 
+        li
+            a {
+            font-size: 18px;
+            padding-inline: 18px;
+}
+
+.navbar-toggler {
+    margin: -5px;
+}
+
+.nav-link {
+    --bs-navbar-active-color: rgb(94, 94, 94);
+}
+
+.navbar-toggler-icon {
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+
+.eslogan {
+    position: absolute;
+    margin: 90px 0px 0px 350px;
+    font-size: 22px;
+    height: 125px;
+}
+
+/*footer*/
+
+.footer__style {
+height: 318px;
+}
+
+.contact {
+margin-top:15px;
+margin-inline: 20px;
+width: 50%;
+}
+
+.contact__info {
+margin-top: -24px;
+margin-left: 40px;
+}
+
+.contact2 {
+margin-top:13px;
+margin-inline: 430px;
+}
+
+.faq {
+margin-top: 90px;
+margin-inline: 20px;
+width: 50%;
+}
+
+.faq__link {
+margin-left: 15px;
+}
+
+.footer__subtitle {
+margin-right: 100px;
+margin-top: 8px;
+}
+
+.footer__social {
+margin-top: 177px;
+}
+
+.footer__title {
+font-size: 51px;
+padding-top: 17px;
+}
+
+.title__map {
+margin-right:45px;
+}
+
+.box__map {
+display:none;
+}
+
+footer
+article
+    a {
+    margin-inline: 12px;
+}
+
+
+/*index*/
+
+.header {
+height: 95px;
+}
+
+.headertitle {
+font-size: 57px;
+}    
+
+.eslogan {
+margin: 0;
+height: 440px;
+font-size: 20px;
+position: unset;
+font-size: 21px;
+padding-top: 70px;
+}
+
+.parallaxTop {
+height: 485px;
+background-attachment: fixed;
+background-position: right;
+}
+
+.content_index {
+    gap: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+        "first" 
+        "second" 
+        "third"
+        ;
+}
+
+.first {
+    flex-direction: column;
+    font-size: 27px;
+    gap: 0px;
+    align-items: center;
+    height: 848px;
+}
+
+.firstIMG {
+    margin: 80px 0px 0px 0px;
+}
+
+#first_subtitle {
+    margin-left: 0px;
+}
+
+.first_2 {
+    margin: 60px;
+}
+
+.btn_display {
+    justify-content: center;
+    gap: 50px;
+}
+
+.second {
+    margin-right: 0px;
+    height: 912px;
+    margin-top: -86px;
+}
+
+.third {
+    margin-top: -200px;
+    margin-left: 0px;
+    border-left: 0px;
+    height: 933px;
+}
+
+.parallaxMid {
+background-attachment: fixed;
+height: 550px;
+margin-top: -93px;
+}
+
+/*street*/
+
+.parallaxTop__street {
+height: 300px;
+}
+
+.eslogan__contact {
+height: 300px;
+padding-top: 200px;
+padding-left: 80px;
+}
+
+.content_street {
+gap:100px;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3,1fr);
+grid-template-areas: 
+        "first_product second_product"
+        ;
+}
+
+.content_subtitle {
+font-size: 40px;
+}
+
+
+.grid_btn_style {
+margin-left: 0px;
+margin-bottom: 70px;
+}
+
+
+/*outdoor*/
+
+.parallaxTop__outdoor {
+height: 300px;
+background-position: unset;
+}
+
+.eslogan__outdoor {
+height: 300px;
+padding-left: 30px;
+padding-top: 200px;
+}
+
+
+.content_outdoor {
+gap: 100px;
+grid-template-columns: 2fr;
+grid-template-rows: repeat(2,1fr);
+grid-template-areas: "first_product second_product";
+}
+
+
+
+/*reviews*/
+
+
+.parallaxTop__reviews {
+height: 300px;
+background-position: center;
+}
+
+.eslogan__reviews {
+height: 300px;
+padding-left: 50px;
+padding-top: 200px;
+}
+
+
+.content_reviews {
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6,1fr);
+text-align: center;
+}
+
+.iframes_reviews {
+@include YX(320px,600px);
+margin-top: 50px;
+margin-left: 0px;
+margin-bottom: 0px;
+}
+
+.maintitle_second_mobile {
+margin-top: 180px;
+margin-left: 100px;
+}
+
+.maintitle_third{
+margin-left: 180px;
+margin-top: 20px;   
+}
+
+.content_subtitle {
+position: unset;
+text-decoration: none;
+letter-spacing: 1px;
+margin-bottom: -50px;
+margin-top: 10px;
+font-size: 35px;
+}
+
+/*contacto*/
+
+
+.parallaxTop__contact {
+height: 300px;
+background-position: center;
+}
+
+form {
+width: 650px;
+}
+
+.eslogan__contact {
+padding-bottom: 100px;
+padding-left: 187px;
+}
+
+
 
 }
