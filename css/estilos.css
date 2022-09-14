@@ -1152,9 +1152,6 @@ main form button:hover {
     font-size: 51px;
     padding-top: 17px;
   }
-  .title__map {
-    margin-right: 45px;
-  }
   .box__map {
     display: none;
   }
@@ -1260,6 +1257,7 @@ main form button:hover {
     grid-template-columns: 2fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "first_product second_product";
+    row-gap: 50px;
   }
   /*reviews*/
   .parallaxTop__reviews {
@@ -1310,6 +1308,451 @@ main form button:hover {
   .eslogan__contact {
     padding-bottom: 100px;
     padding-left: 187px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 993px) {
+  /*GRAL*/
+  .navbar, .navbarUniversal {
+    margin-top: -45px;
+    width: 100%;
+    --bs-navbar-active-color: #adb5bd;
+  }
+  nav ul li a {
+    font-size: 18px;
+    padding-inline: 18px;
+  }
+  .navbar-toggler {
+    margin: -5px;
+  }
+  .navbar-toggler-icon {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
+    position: absolute;
+    margin: 90px 0px 0px 350px;
+    font-size: 22px;
+    height: 125px;
+  }
+  /*footer*/
+  .footer__style {
+    height: 318px;
+  }
+  .contact, .faq {
+    margin-top: 15px;
+    margin-inline: 20px;
+    width: 50%;
+  }
+  .contact__info, .contact__email {
+    margin-top: -24px;
+    margin-left: 40px;
+  }
+  .contact2 {
+    margin-top: 13px;
+    margin-inline: 430px;
+  }
+  .faq {
+    margin-top: 90px;
+    margin-inline: 20px;
+    width: 50%;
+  }
+  .faq__link {
+    margin-left: 15px;
+  }
+  .footer__subtitle {
+    margin-right: 100px;
+    margin-top: 8px;
+  }
+  .footer__social {
+    margin-top: 177px;
+  }
+  .footer__title {
+    font-size: 51px;
+    padding-top: 17px;
+  }
+  .box__map {
+    margin-left: 61px;
+  }
+  .title__map {
+    margin-right: 45px;
+  }
+  footer article a {
+    margin-inline: 12px;
+  }
+  /*index*/
+  .header {
+    height: 95px;
+  }
+  .headertitle {
+    font-size: 57px;
+  }
+  .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
+    margin: 0;
+    height: 440px;
+    font-size: 20px;
+    position: unset;
+    font-size: 21px;
+    padding-top: 70px;
+  }
+  .parallaxTop, .parallaxMid, .parallaxTop__street, .parallaxTop__outdoor, .parallaxTop__reviews, .parallaxTop__contact {
+    height: 485px;
+    background-attachment: fixed;
+    background-position: right;
+  }
+  .content_index {
+    gap: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "first" "second" "third";
+  }
+  .first {
+    flex-direction: column;
+    font-size: 27px;
+    gap: 0px;
+    align-items: center;
+    height: 848px;
+  }
+  .firstIMG {
+    margin: 80px 0px 0px 0px;
+  }
+  #first_subtitle {
+    margin-left: 0px;
+  }
+  .first_2 {
+    margin: 60px;
+  }
+  .btn_display {
+    justify-content: center;
+    gap: 50px;
+  }
+  .second {
+    margin-right: 0px;
+    height: 890px;
+    margin-top: -75px;
+  }
+  .third {
+    margin-top: -200px;
+    margin-left: 0px;
+    border-left: 0px;
+    height: 790px;
+  }
+  .parallaxMid {
+    background-attachment: fixed;
+    height: 750px;
+    margin-top: -236px;
+  }
+  /*street*/
+  .parallaxTop__street {
+    height: 320px;
+  }
+  .eslogan__contact {
+    height: 300px;
+    padding-top: 200px;
+    padding-left: 80px;
+  }
+  .content_street {
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "first_product second_product third_product";
+  }
+  .content_subtitle {
+    font-size: 40px;
+  }
+  .grid_btn_style {
+    margin-left: 0px;
+    margin-bottom: 70px;
+  }
+  /*outdoor*/
+  .parallaxTop__outdoor {
+    height: 320px;
+    background-position: unset;
+  }
+  .eslogan__outdoor {
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 200px;
+  }
+  .content_outdoor {
+    gap: 125px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "first_product second_product";
+    row-gap: 50px;
+  }
+  /*reviews*/
+  .parallaxTop__reviews {
+    height: 320px;
+    background-position: center;
+  }
+  .eslogan__reviews {
+    height: 300px;
+    padding-left: 50px;
+    padding-top: 200px;
+  }
+  .content_reviews {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    text-align: center;
+  }
+  .iframes_reviews {
+    height: 320px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .maintitle_second_mobile {
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .maintitle_third {
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+  .content_subtitle {
+    position: unset;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: -50px;
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  /*contacto*/
+  .parallaxTop__contact {
+    height: 320px;
+    background-position: center;
+  }
+  form {
+    width: 750px;
+  }
+  .eslogan__contact {
+    padding-bottom: 100px;
+    padding-left: 280px;
+  }
+}
+@media (max-width: 1600px) and (min-width: 1201px) {
+  /*GRAL*/
+  .navbar, .navbarUniversal {
+    margin-top: -42px;
+    width: 100%;
+    --bs-navbar-active-color: #adb5bd;
+  }
+  .navbarUniversal {
+    margin-top: -45px;
+  }
+  nav ul li a {
+    font-size: 18px;
+    padding-inline: 18px;
+  }
+  .navbar-toggler {
+    margin: -5px;
+  }
+  .navbar-toggler-icon {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
+    position: absolute;
+    margin: 90px 0px 0px 350px;
+    font-size: 22px;
+    height: 125px;
+  }
+  /*footer*/
+  .footer__style {
+    height: 318px;
+  }
+  .contact, .faq {
+    margin-top: 15px;
+    margin-inline: 20px;
+    width: 50%;
+  }
+  .contact__info, .contact__email {
+    margin-top: -24px;
+    margin-left: 40px;
+  }
+  .contact2 {
+    margin-top: 13px;
+    margin-inline: 430px;
+  }
+  .faq {
+    margin-top: 90px;
+    margin-inline: 20px;
+    width: 50%;
+  }
+  .faq__link {
+    margin-left: 15px;
+  }
+  .footer__subtitle {
+    margin-right: 100px;
+    margin-top: 8px;
+  }
+  .footer__social {
+    margin-top: 177px;
+  }
+  .footer__title {
+    font-size: 51px;
+    padding-top: 17px;
+  }
+  .box__map {
+    margin-left: 61px;
+  }
+  .title__map {
+    margin-right: 45px;
+  }
+  footer article a {
+    margin-inline: 12px;
+  }
+  /*index*/
+  .header {
+    height: 95px;
+  }
+  .headertitle {
+    font-size: 57px;
+  }
+  .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
+    margin: 0;
+    height: 440px;
+    font-size: 20px;
+    position: unset;
+    font-size: 21px;
+    padding-top: 70px;
+  }
+  .parallaxTop, .parallaxMid, .parallaxTop__street, .parallaxTop__outdoor, .parallaxTop__reviews, .parallaxTop__contact {
+    height: 485px;
+    background-attachment: fixed;
+    background-position: right;
+  }
+  .content_index {
+    gap: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "first" "second" "third";
+  }
+  .first {
+    flex-direction: column;
+    font-size: 27px;
+    gap: 0px;
+    align-items: center;
+    height: 848px;
+  }
+  .firstIMG {
+    margin: 80px 0px 0px 0px;
+  }
+  #first_subtitle {
+    margin-left: 0px;
+  }
+  .first_2 {
+    margin: 60px;
+  }
+  .btn_display {
+    justify-content: center;
+    gap: 50px;
+  }
+  .second {
+    margin-right: 0px;
+    height: 890px;
+    margin-top: -75px;
+  }
+  .third {
+    margin-top: -200px;
+    margin-left: 0px;
+    border-left: 0px;
+    height: 790px;
+  }
+  .parallaxMid {
+    background-attachment: fixed;
+    height: 750px;
+    margin-top: -236px;
+  }
+  /*street*/
+  .parallaxTop__street {
+    height: 320px;
+  }
+  .eslogan__street {
+    height: 300px;
+    padding-top: 200px;
+    padding-left: 70px;
+  }
+  .content_street {
+    gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "first_product second_product third_product";
+  }
+  .content_subtitle {
+    font-size: 40px;
+  }
+  .grid_btn_style {
+    margin-left: 0px;
+    margin-bottom: 70px;
+  }
+  /*outdoor*/
+  .parallaxTop__outdoor {
+    height: 320px;
+    background-position: unset;
+  }
+  .eslogan__outdoor {
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 200px;
+  }
+  .content_outdoor {
+    gap: 175px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "first_product second_product";
+    row-gap: 50px;
+  }
+  /*reviews*/
+  .parallaxTop__reviews {
+    height: 320px;
+    background-position: center;
+  }
+  .eslogan__reviews {
+    height: 300px;
+    padding-left: 50px;
+    padding-top: 200px;
+  }
+  .content_reviews {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+  }
+  .iframes_reviews {
+    height: 320px;
+    width: 550px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .maintitle_second_mobile {
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .maintitle_third {
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+  .content_subtitle {
+    position: unset;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: -50px;
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  /*contacto*/
+  .parallaxTop__contact {
+    height: 320px;
+    background-position: center;
+  }
+  form {
+    width: 950px;
+  }
+  .eslogan__contact {
+    padding-bottom: 100px;
+    padding-left: 350px;
   }
 }
 
