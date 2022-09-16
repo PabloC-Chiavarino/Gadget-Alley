@@ -1061,7 +1061,7 @@ form {
 
 .contact2 {
     margin-top:13px;
-    margin-inline: 430px;
+    margin-inline: 365px;
 }
 
 .faq {
@@ -1075,7 +1075,7 @@ form {
 }
 
 .footer__subtitle {
-    margin-right: 100px;
+    margin-right: 60px;
     margin-top: 8px;
 }
 
@@ -1123,7 +1123,7 @@ footer
 
 .parallaxTop {
     height: 440px;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-position: right;
 }
 
@@ -1177,7 +1177,7 @@ footer
     }
 
     .parallaxMid {
-    background-attachment: fixed;
+    background-attachment: inherit;
     height: 550px;
     margin-top: -93px;
 }
@@ -1186,6 +1186,7 @@ footer
 
 .parallaxTop__street {
     height: 300px;
+    background-attachment: inherit;
 }
 
 .eslogan__contact {
@@ -1218,7 +1219,7 @@ footer
 
 .parallaxTop__outdoor {
     height: 300px;
-    background-position: unset;
+    background-attachment: inherit;
 }
 
 .eslogan__outdoor {
@@ -1242,7 +1243,7 @@ footer
 
 .parallaxTop__reviews {
     height: 300px;
-    background-position: center;
+    background-attachment: inherit;
 }
 
 .eslogan__reviews {
@@ -1288,7 +1289,7 @@ footer
 
 .parallaxTop__contact {
     height: 300px;
-    background-position: center;
+    background-attachment: inherit;
 }
 
 form {
@@ -1296,8 +1297,8 @@ form {
 }
 
 .eslogan__contact {
-    padding-bottom: 100px;
-    padding-left: 65px;
+    padding-top: 128px;
+    padding-left: 144px;
 }
 
 }
