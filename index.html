@@ -21,10 +21,29 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
+
 <body>
     <header>
-        <h1 class="headertitle">Gadget Alley</h1>
+        <h1 class="header__title">Gadget Alley</h1>
+        <div class="cart__icon__cont">
+            <img class="cart__icon" src="./assets/icons/shopping-cart.png">
+        </div>
     </header>
+
+    <div class="cart__modal">
+        <p class="cart__modal__title">Carrito</p>
+        <div class="cart__modal__detail">
+            <img src="" alt="">
+            <div class="cart__modal__product">
+                <p>name</p>
+                <p>price</p>
+            </div>
+            <img class="cart__modal__discard" id="discard" src="./assets/icons/bin.png" alt="Descartar">
+        </div>
+        <div>
+            <button class="cart__checkout">Checkout</button>
+        </div>
+    </div>
     
     <div class="parallaxTop">
         <h2 class="eslogan animate__animated animate__backInUp">tu compañero en la rutina</h2>
@@ -50,8 +69,8 @@
                         <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-        </div>
             </div>
+        </div>
     </nav>
 
 
@@ -75,8 +94,7 @@
                     una experiencia de usuario
                     agradable y fluida.</p>
                 <div class="btn__display">    
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__style">COMPRAR</button>
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__style">Conocé más</button>
+                    <button onclick="location.href='./pages/workingOn.html'" class="btn__index">Conocé más</button>
                 </div>
                 </div>
             </article>
@@ -90,8 +108,7 @@
                     realizar tus actividades en todo momento, y su pantalla, mas grande que la MI Band 6
                     te asgura una mejor experiencia</p>
                 <div class="btn__display">
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__style">COMPRAR</button>
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__style">Conocé más</button>
+                    <button onclick="location.href='./pages/workingOn.html'" class="btn__index">Conocé más</button>
                 </div>
                 </div>
             </article>
@@ -106,8 +123,7 @@
                         Cuenta con una gran pantalla AMOLED para hacer tu experiencia aún más
                         satisfactoria aun en condiciones de luz intensa.</p>
                     <div class="btn__display">
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__style">COMPRAR</button>
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__style">Conocé más</button>
+                    <button onclick="location.href='./pages/workingOn.html'" class="btn__index">Conocé más</button>
                     </div>
                 </div>        
             </article>
@@ -161,6 +177,8 @@
     <script>
         AOS.init();
     </script>
-
+    <script src="./js/cartScript.js"></script>
+    <script src="./js/obj.js"></script>
+    
 </body>
 </html>

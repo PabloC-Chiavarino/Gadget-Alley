@@ -23,8 +23,31 @@
 
 <body class="contact__style">
     <header>
-        <h1 class="headertitle">Gadget Alley</h1>
+        <h1 class="header__title">Gadget Alley</h1>
+        <div class="cart__icon__cont">
+            <div class="cart__icon__notification">1</div>
+            <img class="cart__icon" src="../assets/icons/shopping-cart.png">
+        </div>
     </header>
+
+    <div class="cart__modal">
+        <p class="cart__modal__title">Carrito</p>
+        <div class="cart__modal__detail">
+            <img class="cart__modal__img" src="../assets/img/watch4grid.png" alt="">
+            <div class="cart__modal__product">
+                <p class="cart__modal__name" id="product__name">Galaxy Watch 4</p>
+                <p class="cart__modal__price" id="product__price">$ 35.000</p>
+                <img class="cart__modal__minus" id="minus" src="../assets/icons/minus.png" alt="">
+                <input type="number" class="cart__modal__quantity" id="quantity" value="0">
+                <img class="cart__modal__plus" id="plus" src="../assets/icons/plus.png" alt="">
+
+            </div>
+            <img class="cart__modal__discard" id="discard" src="../assets/icons/bin.png">
+        </div>
+        <div>
+            <button class="cart__modal__checkout">Checkout</button>
+        </div>
+    </div>
     
     <div class=parallaxTop__contact>
         <h2 class="eslogan__contact animate__animated animate__fadeInLeft">Dejanos tu consulta</h2>
@@ -115,6 +138,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/obj.js"></script>
+    <script src="../js/cartScript.js"></script>
 
 </body>
 </html>

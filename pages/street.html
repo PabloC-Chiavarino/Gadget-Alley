@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GA - Street</title>
-    <link rel="shortcut icon" href="./assets/icons/headico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/icons/headico.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&display=swap" rel="stylesheet"> 
@@ -23,8 +23,31 @@
 
 <body class="contact__style">
     <header>
-        <h1 class="headertitle">Gadget Alley</h1>
+        <h1 class="header__title">Gadget Alley</h1>
+        <div class="cart__icon__cont">
+            <div class="cart__icon__notification">1</div>
+            <img class="cart__icon" src="../assets/icons/shopping-cart.png">
+        </div>
     </header>
+
+    <div class="cart__modal">
+        <p class="cart__modal__title">Carrito</p>
+        <div class="cart__modal__detail">
+            <img class="cart__modal__img" src="../assets/img/watch4grid.png" alt="">
+            <div class="cart__modal__product">
+                <p class="cart__modal__name" id="product__name">Galaxy Watch 4</p>
+                <p class="cart__modal__price" id="product__price">$ 35.000</p>
+                <img class="cart__modal__minus" id="minus" src="../assets/icons/minus.png" alt="">
+                <input type="number" class="cart__modal__quantity" id="quantity" value="0">
+                <img class="cart__modal__plus" id="plus" src="../assets/icons/plus.png" alt="">
+
+            </div>
+            <img class="cart__modal__discard" id="discard" src="../assets/icons/bin.png">
+        </div>
+        <div>
+            <button class="cart__modal__checkout">Checkout</button>
+        </div>
+    </div>
     
     <div class=parallaxTop__street>
         <h2 class="eslogan__contact animate__animated animate__fadeInLeft">STREET MOVEMENT</h2>
@@ -65,9 +88,10 @@
                                 <div class="card-body first_product">
                             <h5 class="card-title">GALAXY WATCH 4</h5>
                             <p class="card-text">El Galaxy Watch4 es el primer smartwatch con Wear OS Powered by Samsung que te permite acceder fácilmente a tus aplicaciones favoritas desde tu muñeca.</p>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Comprar</button>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Conocé más</button>
-                    </div>
+                            <button id="watch4" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button onclick="location.href='../pages/workingOn.html'"class="btn__primary">Conocé más</button>
+                            <p class="card__legend switch" id="cardLegend__a">Producto agregado al carrito</p>
+                        </div>
                 </article>
                 <article>
                     <div data-aos-duration="500" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="500" class="card text-center" style="width: 18rem;">
@@ -77,8 +101,8 @@
                         <div class="card-body second_product">
                             <h5 class="card-title">MI BAND 7</h5>
                             <p class="card-text">La nueva Mi Band 7 cuenta con una pantalla significativamente más grande que su predecesora hdndo una mejor experienia en general.</p>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Comprar</button>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Conocé más</button>
+                            <button id="band7" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button onclick="location.href='../pages/workingOn.html'"class="btn__primary">Conocé más</button>
                         </div>
                     </article>
                 <article>
@@ -89,8 +113,8 @@
                         <div class="card-body">
                             <h5 class="card-title">MI BAND 6</h5>
                             <p class="card-text">La pulsera Mi Smart Band 6 con una pantalla de 1,56 Pulgadas añade cinco nuevos modos de actividad, que se unen a los otros que ya estaban presentes.</p>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Comprar</button>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Conocé más</button>
+                            <button id="band6" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button onclick="location.href='../pages/workingOn.html'"class="btn__primary">Conocé más</button>
                         </div>
                 </article>
                 <article>
@@ -101,8 +125,8 @@
                         <div class="card-body">
                             <h5 class="card-title">AMAZFIT GTR 2</h5>
                             <p class="card-text">La gran pantalla de alta definición AMOLED con una densidad de píxeles de 326 ppp es nítida y brillante, tanto para ver la hora como para usar cualquiera de tus aplicaciones favoritas.</p>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Comprar</button>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Conocé más</button>
+                            <button id="gtr2" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button onclick="location.href='../pages/workingOn.html'"class="btn__primary">Conocé más</button>
                         </div>
                 </article>
                 <article>
@@ -113,8 +137,8 @@
                         <div class="card-body">
                             <h5 class="card-title">AMAZFIT GTS 2 MINI</h5>
                             <p class="card-text">El Amazfit GTS 2 Mini es un poco más pequeño que el modelo normal, montando una pantalla AMOLED de 1,56 pulgadas y resolución de 354 x 306 píxeles.</p>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Comprar</button>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Conocé más</button>
+                            <button id="gts2Mini" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button onclick="location.href='../pages/workingOn.html'"class="btn__primary">Conocé más</button>
                         </div>
                     </article>
                 <article>
@@ -125,8 +149,8 @@
                         <div class="card-body">
                             <h5 class="card-title">AMAZFIT GTS 2</h5>
                             <p class="card-text">El Amazfit GTS 2 cuenta con el último sensor de alta precisión BioTracker 2 PPG. Gracias al potente motor sensor, el reloj es capaz de lograr una verdadera protección de la salud.</p>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Comprar</button>
-                            <button onclick="location.href='../pages/workingOn.html'"class="btn btn-primary">Conocé más</button>
+                            <button id="gts2" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button onclick="location.href='../pages/workingOn.html'"class="btn__primary">Conocé más</button>
                         </div>
                 </article>    
             </section>   
@@ -172,6 +196,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/cartScript.js"></script>
+    <script src="../js/obj.js"></script>
+    <script src="../js/street.js"></script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.headertitle {
+.header__title {
   animation-name: radiant;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -60,6 +60,89 @@ header {
   height: 90px;
   width: 100%;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.cart__icon__cont {
+  margin-left: 95%;
+  position: absolute;
+  margin-top: 50px;
+  transition: all 0.2s linear;
+}
+.cart__icon__cont:hover {
+  transform: scale(1.1);
+}
+
+.cart__icon {
+  cursor: pointer;
+}
+
+.cart__icon__notification {
+  background-color: crimson;
+  width: 14px;
+  height: 14px;
+  border-radius: 1rem;
+  position: absolute;
+  top: -3px;
+  left: 21px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.cart__modal {
+  display: none;
+  margin-left: 67%;
+  top: 90px;
+  height: fit-content;
+  width: 30%;
+  background-color: gainsboro;
+  position: fixed;
+  z-index: 2;
+  border: none;
+  box-shadow: black 1px 1px 5px;
+  border-radius: 0.3rem;
+}
+.cart__modal__detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
+  padding-bottom: 13px;
+}
+.cart__modal__img {
+  width: 60px;
+}
+.cart__modal__title {
+  border-bottom: 2px solid gray;
+  padding: 15px;
+}
+.cart__modal__product {
+  display: flex;
+  align-items: center;
+}
+.cart__modal__quantity {
+  width: 30px;
+}
+.cart__modal__discard {
+  cursor: pointer;
+}
+.cart__modal__checkout {
+  border: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  margin-left: 290px;
+  margin-bottom: 10px;
+  font-family: "Alumni Sans";
+}
+
+.switch {
+  display: block;
 }
 
 .parallaxTop, .parallaxTop__contact, .parallaxTop__reviews, .parallaxTop__outdoor, .parallaxTop__street, .parallaxMid {
@@ -72,7 +155,7 @@ header {
   background-size: cover;
 }
 
-.headertitle {
+.header__title {
   color: whitesmoke;
   font-family: "Montserrat";
   font-size: 55px;
@@ -89,11 +172,11 @@ header {
   font-weight: lighter;
   letter-spacing: 3px;
   position: sticky;
-  top: 0;
+  top: 45px;
   margin-top: -50px;
-  font-size: 23px;
+  font-size: 22px;
   text-decoration: none;
-  --bs-navbar-nav-link-padding-x: 25px;
+  --bs-navbar-nav-link-padding-x: 17px;
   --bs-navbar-active-color: #adb5bd;
   --bs-navbar-toggler-border-color: #ffffff00;
   --bs-navbar-toggler-padding-y: 9px;
@@ -117,6 +200,7 @@ nav ul {
 
 .bg-dark {
   --bs-bg-opacity: 0.8;
+  background-color: black;
 }
 
 .btn__display {
@@ -126,7 +210,7 @@ nav ul {
   margin-top: 40px;
 }
 
-.btn__style, .btn-primary {
+.btn__index, .btn__primary {
   height: 45px;
   width: 160px;
   color: whitesmoke;
@@ -142,20 +226,17 @@ nav ul {
   border: 0px;
   transition: all 0.5s;
 }
-.btn__style:hover, .btn-primary:hover {
+.btn__index:hover, .btn__primary:hover {
   background-color: rgb(175, 175, 175);
   color: black;
 }
 
-.btn-primary {
+.btn__primary {
   height: 40px;
-  width: 120px;
-  font-size: 18px;
-}
-
-.btn {
+  width: 121px;
+  font-size: 16px;
   --bs-btn-padding-x: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-top: 25px;
   margin-inline: 2px;
   --bs-btn-border-radius: 3px;
@@ -168,6 +249,14 @@ main div section article div div {
 .card {
   --bs-card-spacer-y: 3rem;
   box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 10px;
+}
+.card__legend {
+  position: absolute;
+  padding: 15px 0px 10px 0px;
+  color: darkgreen;
+  font-family: "Alumni Sans";
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .card-img-top {
@@ -544,10 +633,6 @@ footer article a {
   border-radius: 3px;
 }
 
-.btn_reviews {
-  width: 150px;
-}
-
 /*CONTACTO*/
 .contact__style {
   background: radial-gradient(circle, rgb(255, 255, 255) 10%, rgb(83, 105, 117) 90%);
@@ -668,9 +753,263 @@ main form button:hover {
 }
 
 /***responsive***/
+@media (max-width: 575px) and (min-width: 350px) {
+  /**gral**/
+  .header__title {
+    font-size: 50px;
+  }
+  .navbar, .navbarUniversal {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .bg-dark {
+    --bs-bg-opacity: 0.8;
+  }
+  nav ul li a {
+    font-size: 18px;
+    padding-inline: 18px;
+  }
+  .navbar-toggler {
+    margin: -5px;
+  }
+  .navbar-toggler-icon {
+    margin-bottom: 0px;
+  }
+  .nav-link {
+    --bs-navbar-active-color: #222;
+  }
+  /*footer*/
+  .footer__style {
+    height: 322px;
+  }
+  .footer__title {
+    font-size: 35px;
+  }
+  .contact, .faq {
+    margin-top: 0px;
+    width: 70%;
+    font-size: 16px;
+    margin-inline: 0px;
+    margin-left: 24px;
+  }
+  .contact__info, .contact__email {
+    margin-top: -24px;
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .contact2 {
+    margin-top: 51px;
+    margin-left: 24px;
+    margin-inline: 0px;
+  }
+  .faq {
+    margin-top: 115px;
+    width: 90%;
+    font-size: 16px;
+    padding-left: 90px;
+  }
+  .faq__link {
+    margin-left: 4px;
+  }
+  .footer__subtitle {
+    margin-right: 0px;
+    margin-top: -50px;
+    margin-left: 8px;
+    font-size: 16px;
+  }
+  .footer__social {
+    margin-top: 170px;
+    padding-top: 70px;
+    margin-right: 10px;
+  }
+  .footer__title {
+    font-size: 35px;
+  }
+  .box__map {
+    display: none;
+  }
+  footer article a {
+    margin-inline: 12px;
+  }
+  /*index*/
+  .parallaxTop, .parallaxMid, .parallaxTop__street, .parallaxTop__outdoor, .parallaxTop__reviews, .parallaxTop__contact {
+    height: 400px;
+    background-attachment: unset;
+    background-position: right;
+  }
+  .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {
+    margin: 0;
+    height: 400px;
+    font-size: 18px;
+    padding-top: 100px;
+  }
+  .maintitle {
+    font-size: 55px;
+  }
+  .firstIMG {
+    height: 350px;
+    width: 375px;
+  }
+  .content_index {
+    gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "first" "second" "third";
+    max-width: 100%;
+    height: 2422px;
+  }
+  .first {
+    flex-direction: column;
+    gap: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: center;
+    font-size: 23px;
+    height: 750px;
+  }
+  .firstIMG {
+    margin: auto;
+    margin-top: 80px;
+    height: 350px;
+    width: 290px;
+  }
+  #first_subtitle {
+    margin-left: 0px;
+  }
+  .first__info {
+    margin: 25px;
+    margin-top: 60px;
+  }
+  .btn_display {
+    justify-content: center;
+  }
+  .second {
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 800px;
+    font-size: 23px;
+    max-width: 100%;
+  }
+  .secondIMG {
+    height: 265px;
+    width: 275px;
+  }
+  .second__info {
+    margin: 18px;
+  }
+  .third {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 23px;
+    height: 880px;
+    border-left: 0px;
+  }
+  .thirdIMG {
+    height: 265px;
+    width: 275px;
+  }
+  .third__info {
+    margin: 18px;
+  }
+  .maintitle_second {
+    margin-top: -220px;
+    margin-left: 150px;
+  }
+  .btn__index, .btn__primary {
+    width: 115px;
+  }
+  .parallaxMid {
+    background-attachment: unset;
+    height: 450px;
+    margin-top: 0px;
+    background-position: top;
+  }
+  .eslogan__second {
+    padding-bottom: 220px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  /*street*/
+  .parallaxTop__street {
+    background-attachment: fixed;
+    height: 250px;
+  }
+  .content_street {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .content_subtitle {
+    font-size: 30px;
+  }
+  .grid_img {
+    height: 270px;
+    width: 290px;
+  }
+  .grid_btn_style {
+    margin-left: 0px;
+    margin-bottom: 70px;
+  }
+  /*outdoor*/
+  .parallaxTop__outdoor {
+    background-attachment: fixed;
+    height: 250px;
+  }
+  .eslogan__outdoor {
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+  .content_outdoor_header {
+    height: 280px;
+  }
+  .content_outdoor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  /*reviews*/
+  .parallaxTop__reviews {
+    height: 250px;
+  }
+  .eslogan__reviews {
+    padding-bottom: 168px;
+    padding-left: 35px;
+  }
+  .content_reviews {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    text-align: center;
+  }
+  .maintitle_second_mobile {
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .maintitle_third {
+    margin-left: 60%;
+    margin-top: 50px;
+    width: 40%;
+  }
+  .content_subtitle {
+    position: unset;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: -20px;
+    margin-top: 30px;
+  }
+  /*contacto*/
+  .parallaxTop__contact {
+    background-attachment: fixed;
+    height: 250px;
+    background-position: center;
+  }
+  form {
+    width: 520px;
+  }
+  .eslogan__contact {
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+}
 @media (max-width: 767px) and (min-width: 576px) {
   /**gral**/
-  .headertitle {
+  .header__title {
     font-size: 50px;
   }
   .navbar, .navbarUniversal {
@@ -964,7 +1303,7 @@ main form button:hover {
   .header {
     height: 270px;
   }
-  .headertitle {
+  .header__title {
     font-size: 57px;
   }
   .eslogan, .eslogan__second, .eslogan__outdoor, .eslogan__reviews, .eslogan__contact {

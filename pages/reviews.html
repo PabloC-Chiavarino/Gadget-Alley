@@ -23,8 +23,31 @@
 
 <body class="contact__style">
     <header>
-        <h1 class="headertitle">Gadget Alley</h1>
+        <h1 class="header__title">Gadget Alley</h1>
+        <div class="cart__icon__cont">
+            <div class="cart__icon__notification">1</div>
+            <img class="cart__icon" src="../assets/icons/shopping-cart.png">
+        </div>
     </header>
+
+    <div class="cart__modal">
+        <p class="cart__modal__title">Carrito</p>
+        <div class="cart__modal__detail">
+            <img class="cart__modal__img" src="../assets/img/watch4grid.png" alt="">
+            <div class="cart__modal__product">
+                <p class="cart__modal__name" id="product__name">Galaxy Watch 4</p>
+                <p class="cart__modal__price" id="product__price">$ 35.000</p>
+                <img class="cart__modal__minus" id="minus" src="../assets/icons/minus.png" alt="">
+                <input type="number" class="cart__modal__quantity" id="quantity" value="0">
+                <img class="cart__modal__plus" id="plus" src="../assets/icons/plus.png" alt="">
+
+            </div>
+            <img class="cart__modal__discard" id="discard" src="../assets/icons/bin.png">
+        </div>
+        <div>
+            <button class="cart__modal__checkout">Checkout</button>
+        </div>
+    </div>
     
     <div class="parallaxTop__reviews">
         <h2 class="eslogan__reviews animate__animated animate__fadeInLeft">VIDEO REVIEWS</h2>
@@ -62,42 +85,42 @@
                 <p class="content_subtitle">XIAOMI MI SMART BAND 7</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/UvUSnCazAbs" title="LA TENGO!🔥XIAOMI BAND 7 PRIMERA REVIEW A FONDO en ESPAÑOL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>
-                    <button class="btn_reviews btn btn-primary">Ir al producto</button>
+                    <button class="btn__primary">Ir al producto</button>
                 </div>
             </article>
             <article data-aos-duration="500" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="500">
                 <p class="content_subtitle">AMAZFIT GTR 2</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/WZ6XSr1YdDI" title="AMAZFIT GTR 2💥¡Esto SÍ es un SMARTWATCH SERIO! REVIEW TRAS 5 SEMANAS en español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>
-                    <button class="btn_reviews btn btn-primary">Ir al producto</button>
+                    <button class="btn__primary">Ir al producto</button>
                 </div>
             </article>
             <article data-aos-duration="500" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500">
                 <p class="content_subtitle">GALAXY WATCH 4</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/2c5ss7en6KQ" title="¿El MEJOR? Galaxy Watch 4 REVIEW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>
-                    <button class="btn_reviews btn btn-primary">Ir al producto</button>
+                    <button class="btn__primary">Ir al producto</button>
                 </div>
             </article>
             <article data-aos-duration="500" data-aos="fade-rigth" data-aos-anchor="#example-anchor" data-aos-offset="500">
                 <p class="content_subtitle">AMAZFIT GTS 2 MINI</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/GbgZhLLX9bw" title="Amazfit GTS 2 MINI🔥Primera REVIEW A FONDO y UNBOXING" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>
-                    <button class="btn_reviews btn btn-primary">Ir al producto</button>
+                    <button class="btn__primary">Ir al producto</button>
                 </div>
             </article>
             <article data-aos-duration="500" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="500">
                 <p class="content_subtitle">AMAZFIT GTS 2</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/aCYxZVjnvVI" title="Amazfit GTS 2🔥A FONDO⌚Unboxing y ANÁLISIS de TODAS sus funciones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>
-                    <button class="btn_reviews btn btn-primary">Ir al producto</button>
+                    <button class="btn__primary">Ir al producto</button>
                 </div>
             </article>
             <article data-aos-duration="500" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500">
                 <p class="content_subtitle">MI BAND 6</p>
                 <iframe class="iframes_reviews" src="https://www.youtube.com/embed/kSwYAL13rIw" title="¡IMPOSIBLE decirle que NO! Xiaomi Mi Band 6 REVIEW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div>
-                    <button class="btn_reviews btn btn-primary">Ir al producto</button>
+                    <button class="btn__primary">Ir al producto</button>
                 </div>
             </article>
         </section>
@@ -142,6 +165,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/obj.js"></script>
+    <script src="../js/cartScript.js"></script>
 
 </body>
 </html>
