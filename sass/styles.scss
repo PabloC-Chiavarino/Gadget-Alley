@@ -107,17 +107,22 @@ header {
 .cart__modal {
     display: none;
     margin-left: 67%;
+    text-align: center;
+    padding: 10px;
     top: 90px;
     height: fit-content;
-    width: 30%;
-    background-color: gainsboro;
+    overflow-y: scroll;
+    max-height: 45%;
+    width: fit-content;
+    background-color: white;
     position: fixed;
     z-index: 2;
     border: none;
     box-shadow: black 1px 1px 5px;
-    border-radius: 0.3rem;
+    border-radius: none;
     &__detail {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         border-bottom: 1px solid gray;
@@ -131,8 +136,9 @@ header {
         padding: 15px;
     }
     &__product {
-        display: flex;
+        display: contents;
         align-items: center;
+        justify-content: space-evenly;
     }
     &__quantity {
         width: 30px
@@ -157,6 +163,10 @@ header {
     display: block;
 }
 
+#toRender {
+    display:flex;
+    flex-direction: column;
+}
 
 .parallaxTop {
     @include YX(525px, 100%);
@@ -268,11 +278,13 @@ main {
     }
 }
 
+.test {
+    color: green;
+}
 .card {
     --bs-card-spacer-y: 3rem;
     box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 10px;
     &__legend {
-        //display: none;
         position: absolute;
         padding: 15px 0px 10px 0px;
         color: darkgreen;

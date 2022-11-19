@@ -26,6 +26,7 @@
     <header>
         <h1 class="header__title">Gadget Alley</h1>
         <div class="cart__icon__cont">
+            <div class="cart__icon__notification">1</div>
             <img class="cart__icon" src="./assets/icons/shopping-cart.png">
         </div>
     </header>
@@ -33,15 +34,19 @@
     <div class="cart__modal">
         <p class="cart__modal__title">Carrito</p>
         <div class="cart__modal__detail">
-            <img src="" alt="">
+            <img class="cart__modal__img" src="./assets/img/watch4grid.png" alt="">
             <div class="cart__modal__product">
-                <p>name</p>
-                <p>price</p>
+                <p class="cart__modal__name" id="product__name">Galaxy Watch 4</p>
+                <p class="cart__modal__price" id="product__price">$ 35.000</p>
+                <img class="cart__modal__minus" id="minus" src="./assets/icons/minus.png" alt="">
+                <input type="number" class="cart__modal__quantity" id="quantity" value="0">
+                <img class="cart__modal__plus" id="plus" src="./assets/icons/plus.png" alt="">
+
             </div>
-            <img class="cart__modal__discard" id="discard" src="./assets/icons/bin.png" alt="Descartar">
+            <img class="cart__modal__discard" id="discard" src="./assets/icons/bin.png">
         </div>
         <div>
-            <button class="cart__checkout">Checkout</button>
+            <button class="cart__modal__checkout">Checkout</button>
         </div>
     </div>
     
@@ -94,7 +99,7 @@
                     una experiencia de usuario
                     agradable y fluida.</p>
                 <div class="btn__display">    
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__index">Conocé más</button>
+                    <button id="moreIndex__a" class="btn__index">Conocé más</button>
                 </div>
                 </div>
             </article>
@@ -108,7 +113,7 @@
                     realizar tus actividades en todo momento, y su pantalla, mas grande que la MI Band 6
                     te asgura una mejor experiencia</p>
                 <div class="btn__display">
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__index">Conocé más</button>
+                    <button id="moreIndex__b" class="btn__index">Conocé más</button>
                 </div>
                 </div>
             </article>
@@ -123,7 +128,7 @@
                         Cuenta con una gran pantalla AMOLED para hacer tu experiencia aún más
                         satisfactoria aun en condiciones de luz intensa.</p>
                     <div class="btn__display">
-                    <button onclick="location.href='./pages/workingOn.html'" class="btn__index">Conocé más</button>
+                    <button id="moreIndex__c" class="btn__index">Conocé más</button>
                     </div>
                 </div>        
             </article>
@@ -179,6 +184,8 @@
     </script>
     <script src="./js/cartScript.js"></script>
     <script src="./js/obj.js"></script>
+    <script src="./js/index.js"></script>
     
+
 </body>
 </html>
