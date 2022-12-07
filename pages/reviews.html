@@ -32,20 +32,30 @@
 
     <div class="cart__modal">
         <p class="cart__modal__title">Carrito</p>
-        <div class="cart__modal__detail">
-            <img class="cart__modal__img" src="../assets/img/watch4grid.png" alt="">
-            <div class="cart__modal__product">
-                <p class="cart__modal__name" id="product__name">Galaxy Watch 4</p>
-                <p class="cart__modal__price" id="product__price">$ 35.000</p>
-                <img class="cart__modal__minus" id="minus" src="../assets/icons/minus.png" alt="">
-                <input type="number" class="cart__modal__quantity" id="quantity" value="0">
-                <img class="cart__modal__plus" id="plus" src="../assets/icons/plus.png" alt="">
-
+        <div id="toRender">
+            <div class="cart__modal__empty">
+                <p>El carrito está vacío.</p>
             </div>
-            <img class="cart__modal__discard" id="discard" src="../assets/icons/bin.png">
+            <div class="cart__modal__content">
+                <div class="cart__modal__detail">
+                    <img class="cart__modal__img" src="" alt="">
+                    <div class="cart__modal__product">
+                        <p class="cart__modal__name" id="product__name"></p>
+                        <p class="cart__modal__price" id="product__price"></p>
+                        <img class="cart__modal__minus" id="" src="" alt="">
+                        <input type="" class="cart__modal__quantity" id="quantity" value="0" readonly>
+                        <img class="cart__modal__plus" id="" src="" alt="">
+                        <img class="cart__modal__discard" id="" src="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <button class="cart__modal__checkout">Checkout</button>
+        <div class="cart__modal__totalPrice">
+            <p>Total: $</p>
+        </div>
+        <div class="cart__modal__btn__cont">
+            <button id="emptyCart" class="cart__modal__options">Vaciar Carrito</button>
+            <button id="checkOut" class="cart__modal__options">Checkout</button>
         </div>
     </div>
     

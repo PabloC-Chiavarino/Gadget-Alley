@@ -1,0 +1,91 @@
+[{
+    "id":"1street",
+    "price":35000,
+    "name":"Galaxy Watch 4",
+    "img": "../assets/img/watch4grid.png",
+    "actualStock":20,
+    "withdrawnStock":0,
+    "quantity":0 
+},
+{
+    "id":"2street",
+    "price":15000,
+    "name":"Xiaomi Mi Band 7",
+    "img": "../assets/img/miband7grid.png",
+    "actualStock":10,
+    "withdrawnStock":0,
+    "quantity":0 
+},
+{
+    "id":"3street",
+    "price":12000,
+    "name":"Xiaomi Mi Band 6",
+    "img": "../assets/img/miband6grid.png",
+    "actualStock":10,
+    "withdrawnStock":0,
+    "quantity":0 
+},
+{
+    "id":"4street",
+    "price":40000,
+    "name":"Amazfit GTR 2",
+    "img": "../assets/img/gtr2grid.png",
+    "actualStock":10,
+    "withdrawnStock":0,
+    "quantity":0 
+},
+{
+    "id":"5street",
+    "price":30000,
+    "name":"Amazfit GTS 2 Mini",
+    "img": "../assets/img/GTS2minigrid.png",
+    "actualStock":10,
+    "withdrawnStock":0,
+    "quantity":0 
+},
+{
+    "id": "6street",
+        "price": 45000,
+        "name":"Amazfit GTS 2",
+        "img": "../assets/img/gts2grid.png",
+        "actualStock":10,
+        "withdrawnStock":0,
+        "quantity":0 
+    },
+    {
+        "id":"1out",
+        "price":10000,
+        "name":"Solar Power Bank",
+        "img": "../assets/img/Stybba6000mAh.png",
+        "actualStock":5,
+        "withdrawnStock":0,
+        "quantity":0 
+    },
+    {
+        "id":"2out",
+        "price":30000,
+        "name":"Go Pro 10",
+        "img": "../assets/img/HERO10.png",
+        "actualStock":10,
+        "withdrawnStock":0,
+        "quantity":0 
+    },
+    {
+        "id":  "3out",
+        "price":40000,
+        "name":"Dron Fly Horizont",
+        "img": "../assets/img/DJIMini2.png",
+        "actualStock":10,
+        "withdrawnStock":0,
+        "quantity":0 
+    },
+    {
+        "id":"4out",
+        "price":75000,
+        "name":"Dron High Flyer",
+        "img": "../assets/img/droneDM107s.png",
+        "actualStock":5,
+        "withdrawnStock":0,
+        "quantity":0 
+    }
+]

@@ -81,33 +81,43 @@ header {
 }
 
 .cart__icon__notification {
+  display: none;
   background-color: crimson;
-  width: 14px;
-  height: 14px;
+  height: 16px;
+  width: 16px;
   border-radius: 1rem;
   position: absolute;
   top: -3px;
   left: 21px;
+  padding-left: 4px;
   font-size: 12px;
+  font-weight: bold;
   z-index: 1;
 }
 
 .cart__modal {
+  font-family: "Bebas Neue";
+  font-size: 18px;
   display: none;
   margin-left: 67%;
   text-align: center;
   padding: 10px;
   top: 90px;
-  height: fit-content;
-  overflow-y: scroll;
-  max-height: 45%;
-  width: fit-content;
+  height: 370px;
+  width: 400px;
   background-color: white;
   position: fixed;
   z-index: 2;
   border: none;
-  box-shadow: black 1px 1px 5px;
+  box-shadow: black 1px 1px 10px;
   border-radius: none;
+}
+.cart__modal__empty {
+  font-size: 18px;
+  margin: auto;
+}
+.cart__modal__content {
+  display: none;
 }
 .cart__modal__detail {
   display: flex;
@@ -116,6 +126,11 @@ header {
   justify-content: space-evenly;
   border-bottom: 1px solid gray;
   padding-bottom: 13px;
+  height: 100px;
+}
+.cart__modal__name, .cart__modal__price {
+  padding-top: 16px;
+  padding-right: 16px;
 }
 .cart__modal__img {
   width: 60px;
@@ -123,6 +138,8 @@ header {
 .cart__modal__title {
   border-bottom: 2px solid gray;
   padding: 15px;
+  font-size: 21px;
+  letter-spacing: 0.5px;
 }
 .cart__modal__product {
   display: contents;
@@ -131,20 +148,30 @@ header {
 }
 .cart__modal__quantity {
   width: 30px;
+  text-align: center;
+  font-size: 16px;
 }
 .cart__modal__discard {
   cursor: pointer;
 }
-.cart__modal__checkout {
+.cart__modal__btn__cont {
+  display: none;
+  justify-content: space-around;
+}
+.cart__modal__options {
+  font-size: 19px;
+  font-weight: bold;
   border: none;
   background-color: crimson;
   color: white;
-  border-radius: 5px;
+  border-radius: 0px;
   height: 50px;
   width: 100px;
-  margin-left: 290px;
-  margin-bottom: 10px;
   font-family: "Alumni Sans";
+}
+.cart__modal__totalPrice {
+  display: none;
+  padding-top: 5px;
 }
 
 .switch {
@@ -154,6 +181,12 @@ header {
 #toRender {
   display: flex;
   flex-direction: column;
+  row-gap: 16px;
+  height: 170px;
+}
+
+.overflow-y {
+  overflow-y: scroll;
 }
 
 .parallaxTop, .parallaxTop__contact, .parallaxTop__reviews, .parallaxTop__outdoor, .parallaxTop__street, .parallaxMid {
@@ -221,7 +254,7 @@ nav ul {
   margin-top: 40px;
 }
 
-.btn__index, .btn__primary {
+.btn__index, .btn__primary, .btn__secondary {
   height: 45px;
   width: 160px;
   color: whitesmoke;
@@ -237,20 +270,25 @@ nav ul {
   border: 0px;
   transition: all 0.5s;
 }
-.btn__index:hover, .btn__primary:hover {
+.btn__index:hover, .btn__primary:hover, .btn__secondary:hover {
   background-color: rgb(175, 175, 175);
   color: black;
 }
 
-.btn__primary {
+.btn__primary, .btn__secondary {
   height: 40px;
   width: 121px;
+  background-color: coral;
   font-size: 16px;
   --bs-btn-padding-x: 1.2rem;
   letter-spacing: 0.5px;
   margin-top: 25px;
   margin-inline: 2px;
   --bs-btn-border-radius: 3px;
+}
+
+.btn__secondary {
+  background-color: black;
 }
 
 main div section article div div {
@@ -929,7 +967,7 @@ main form button:hover {
     margin-top: -220px;
     margin-left: 150px;
   }
-  .btn__index, .btn__primary {
+  .btn__index, .btn__primary, .btn__secondary {
     width: 115px;
   }
   .parallaxMid {

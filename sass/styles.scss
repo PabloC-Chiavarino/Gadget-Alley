@@ -93,33 +93,41 @@ header {
 }
 
 .cart__icon__notification {
+    display: none;
     background-color: crimson;
-    width: 14px;
-    height: 14px;
+    @include YX(16px, 16px);
     border-radius: 1rem;
     position: absolute;
     top: -3px;
     left: 21px;
+    padding-left: 4px;
     font-size: 12px;
+    font-weight: bold;
     z-index: 1;
 }
 
 .cart__modal {
+    font-family: map-get($fonts, subtitle);
+    font-size: 18px;
     display: none;
     margin-left: 67%;
     text-align: center;
     padding: 10px;
     top: 90px;
-    height: fit-content;
-    overflow-y: scroll;
-    max-height: 45%;
-    width: fit-content;
+    @include YX(370px, 400px);
     background-color: white;
     position: fixed;
     z-index: 2;
     border: none;
-    box-shadow: black 1px 1px 5px;
+    box-shadow: black 1px 1px 10px;
     border-radius: none;
+    &__empty {
+        font-size: 18px;
+        margin: auto;
+    }
+    &__content {
+        display: none;
+    }
     &__detail {
         display: flex;
         flex-direction: row;
@@ -127,6 +135,14 @@ header {
         justify-content: space-evenly;
         border-bottom: 1px solid gray;
         padding-bottom: 13px;
+        height: 100px;
+    }
+    &__name{
+        padding-top: 16px;
+        padding-right: 16px
+    }
+    &__price {
+        @extend .cart__modal__name;
     }
     &__img {
         width: 60px;
@@ -134,6 +150,8 @@ header {
     &__title {
         border-bottom: 2px solid gray;
         padding: 15px;
+        font-size: 21px;
+        letter-spacing: 0.5px;
     }
     &__product {
         display: contents;
@@ -141,20 +159,30 @@ header {
         justify-content: space-evenly;
     }
     &__quantity {
-        width: 30px
+        width: 30px;
+        text-align: center;
+        font-size: 16px;
     }    
     &__discard {
         cursor: pointer;
     }
-    &__checkout {
+    &__btn__cont{
+        display: none;
+        justify-content: space-around;
+    }
+    &__options {
+        font-size: 19px;
+        font-weight: bold;
         border: none;
         background-color: crimson;
         color: white;
-        border-radius: 5px;
+        border-radius: 0px;
         @include YX(50px, 100px);
-        margin-left: 290px;
-        margin-bottom: 10px;
-        font-family: map-get($map:$fonts, $key: content);
+        font-family: map-get($fonts, content);
+    }
+    &__totalPrice {
+        display: none;
+        padding-top: 5px;
     }
 }
 
@@ -166,6 +194,13 @@ header {
 #toRender {
     display:flex;
     flex-direction: column;
+    row-gap:16px;
+    height: 170px;
+}
+
+.overflow-y {
+    overflow-y:scroll;
+
 }
 
 .parallaxTop {
@@ -256,12 +291,18 @@ nav {
 .btn__primary {
     @extend .btn__index;
     @include YX(40px, 121px);
+    background-color: coral;
     font-size: 16px;
     --bs-btn-padding-x: 1.2rem;
     letter-spacing: 0.5px;
     margin-top: 25px;
     margin-inline: 2px;
     --bs-btn-border-radius: 3px;
+}
+
+.btn__secondary {
+    @extend .btn__primary;
+    background-color: black;
 }
 
 main {

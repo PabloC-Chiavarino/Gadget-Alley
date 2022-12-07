@@ -32,20 +32,30 @@
 
     <div class="cart__modal">
         <p class="cart__modal__title">Carrito</p>
-        <div class="cart__modal__detail">
-            <img class="cart__modal__img" src="../assets/img/watch4grid.png" alt="">
-            <div class="cart__modal__product">
-                <p class="cart__modal__name" id="product__name">Galaxy Watch 4</p>
-                <p class="cart__modal__price" id="product__price">$ 35.000</p>
-                <img class="cart__modal__minus" id="minus" src="../assets/icons/minus.png" alt="">
-                <input type="number" class="cart__modal__quantity" id="quantity" value="0">
-                <img class="cart__modal__plus" id="plus" src="../assets/icons/plus.png" alt="">
-
+        <div id="toRender">
+            <div class="cart__modal__empty">
+                <p>El carrito está vacío.</p>
             </div>
-            <img class="cart__modal__discard" id="discard" src="../assets/icons/bin.png">
+            <div class="cart__modal__content">
+                <div class="cart__modal__detail">
+                    <img class="cart__modal__img" src="" alt="">
+                    <div class="cart__modal__product">
+                        <p class="cart__modal__name" id="product__name"></p>
+                        <p class="cart__modal__price" id="product__price"></p>
+                        <img class="cart__modal__minus" id="" src="" alt="">
+                        <input type="" class="cart__modal__quantity" id="quantity" value="0" readonly>
+                        <img class="cart__modal__plus" id="" src="" alt="">
+                        <img class="cart__modal__discard" id="" src="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <button class="cart__modal__checkout">Checkout</button>
+        <div class="cart__modal__totalPrice">
+            <p>Total: $</p>
+        </div>
+        <div class="cart__modal__btn__cont">
+            <button id="emptyCart" class="cart__modal__options">Vaciar Carrito</button>
+            <button id="checkOut" class="cart__modal__options">Checkout</button>
         </div>
     </div>
     
@@ -86,11 +96,11 @@
                         <div>
                             <img src="../assets/img/Stybba6000mAh.png" class="card-img-top" alt="...">
                         </div>
-                        <div id="detailsOutdoor__a" class="card-body first_product">
+                        <div class="card-body first_product">
                             <h5 class="card-title">SOLAR POWER BANK STYBBA 6000 mAh</h5>
                             <p class="card-text">El cargador portátil Stybba Slim tiene un diseño compacto que permite llevarlo cómodamente en el bolsillo de una prenda o en un bolso pequeño. Además, es eco friendly ya que posee una panel que absorbe la energía solar.</p>
-                            <button id="addToCart" class="btn__primary">AÑADIR AL CARRITO</button>
-                            <button id="moreOutdoor__a" class="btn__primary">Conocé más</button>
+                            <button id="1out" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button id="moreOutdoor__1" class="btn__secondary">Conocé más</button>
                     </div>
                 </article>
                 <article> 
@@ -98,11 +108,11 @@
                         <div>
                             <img src="../assets/img/HERO10.png" class="card-img-top" alt="...">
                         </div>
-                        <div id="detailsOutdoor__b" class="card-body second_product">
+                        <div class="card-body second_product">
                             <h5 class="card-title">GO PRO HERO 10 BLACK</h5>
                             <p class="card-text">Gracias a la potencia del nuevo y revolucionario procesador GP2, la HERO10 Black captura fotos de 23 MP y vídeos en 5,3K con el doble de velocidad de fotogramas, un rendimiento mejorado con poca luz y con una extraordinaria estabilización de vídeo</p>
-                            <button id="addToCart" class="btn__primary">AÑADIR AL CARRITO</button>
-                            <button id="moreOutdoor__b" class="btn__primary">Conocé más</button>
+                            <button id="2out" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button id="moreOutdoor__2" class="btn__secondary">Conocé más</button>
                     </div>
                 </article>
                 <article>
@@ -110,11 +120,11 @@
                         <div>
                             <img src="../assets/img/DJIMini2.png" class="card-img-top" alt="...">
                         </div>
-                        <div id="detailsOutdoor__c" class="card-body">
+                        <div class="card-body">
                             <h5 class="card-title">DRONE DJI MAVIC MINI 2</h5>
                             <p class="card-text">DJI es el líder mundial en drones civiles, tecnología de imágenes aéreas y tecnología de cámaras creativas. Sus productos son utilizados todos los días por clientes en más de 100 países para la realización de películas, construcción, etc. ¡Mavic Mini 2 llega para romper todos los esquemas!</p>
-                            <button id="addToCart" class="btn__primary">AÑADIR AL CARRITO</button>
-                            <button id="moreOutdoor__c" class="btn__primary">Conocé más</button>
+                            <button id="3out" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button id="moreOutdoor__3" class="btn__secondary">Conocé más</button>
                     </div>
                 </article>
                 <article>
@@ -122,12 +132,12 @@
                         <div>
                             <img src="../assets/img/droneDM107s.png" class="card-img-top" alt="...">
                         </div>
-                        <div id="detailsOutdoor__d" class="card-body">
+                        <div class="card-body">
                             <h5 class="card-title">DRONE DM107S</h5>
                             <p class="card-text">Diseño plegable para ser fácil de transportar y llevar a todos lados. 4 canales de transmisión para un mejor control de vuelo. Regulador de velocidad: principiante, intermedio y avanzado para cubrir cualquier tipo de uso proporcionando asi una gran experiencia de vuelo.
                             </p>
-                            <button id="addToCart" class="btn__primary">AÑADIR AL CARRITO</button>
-                            <button id="moreOutdoor__d" class="btn__primary">Conocé más</button>
+                            <button id="4out" class="btn__primary">AÑADIR AL CARRITO</button>
+                            <button id="moreOutdoor__4" class="btn__secondary">Conocé más</button>
                     </div>
                 </article>
             </section>
@@ -176,8 +186,8 @@
     <script>
         AOS.init();
     </script>
-    <script src="../js/cartScript.js"></script>
     <script src="../js/obj.js"></script>
+    <script src="../js/cartScript.js"></script>
     <script src="../js/outdoor.js"></script>
 
 </body>
