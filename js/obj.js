@@ -1,7 +1,7 @@
 /**clase constructora para definir metodos */
 
 class Product {
-constructor (id, price, name, img, actualStock, withdrawnStock, quantity) {
+constructor (id, price, name, img, actualStock, withdrawnStock, quantity, category) {
         this.id = id;
         this.price = parseInt(price);
         this.name = name;
@@ -9,6 +9,7 @@ constructor (id, price, name, img, actualStock, withdrawnStock, quantity) {
         this.actualStock = parseInt(actualStock);
         this.withdrawnStock = parseInt(withdrawnStock);
         this.quantity = parseInt(quantity);
+        this.category = category;
     }
 
     stockDeduct () {
@@ -29,9 +30,9 @@ let retrieveObjs;
 
 fetch('../stockAvailable.json')
 .then(response => response.json())
-    .then(parsedResult => {
+    .then (parsedResult => {
         retrieveObjs = parsedResult;
         retrieveObjs.forEach(obj => {
-            available.push(new Product(obj.id, obj.price, obj.name, obj.img, obj.actualStock, obj.withdrawnStock, obj.quantity));
+            available.push(new Product(obj.id, obj.price, obj.name, obj.img, obj.actualStock, obj.withdrawnStock, obj.quantity, obj.category));
         });
     })

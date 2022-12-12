@@ -5,7 +5,8 @@
     "img": "../assets/img/watch4grid.png",
     "actualStock":20,
     "withdrawnStock":0,
-    "quantity":0 
+    "quantity":0,
+    "category":"street"
 },
 {
     "id":"2street",
@@ -14,7 +15,8 @@
     "img": "../assets/img/miband7grid.png",
     "actualStock":10,
     "withdrawnStock":0,
-    "quantity":0 
+    "quantity":0,
+    "category":"street"
 },
 {
     "id":"3street",
@@ -23,7 +25,8 @@
     "img": "../assets/img/miband6grid.png",
     "actualStock":10,
     "withdrawnStock":0,
-    "quantity":0 
+    "quantity":0,
+    "category":"street"
 },
 {
     "id":"4street",
@@ -32,7 +35,8 @@
     "img": "../assets/img/gtr2grid.png",
     "actualStock":10,
     "withdrawnStock":0,
-    "quantity":0 
+    "quantity":0,
+    "category":"street"
 },
 {
     "id":"5street",
@@ -41,16 +45,18 @@
     "img": "../assets/img/GTS2minigrid.png",
     "actualStock":10,
     "withdrawnStock":0,
-    "quantity":0 
+    "quantity":0,
+    "category":"street"
 },
 {
-    "id": "6street",
+    "id":"6street",
         "price": 45000,
         "name":"Amazfit GTS 2",
         "img": "../assets/img/gts2grid.png",
         "actualStock":10,
         "withdrawnStock":0,
-        "quantity":0 
+        "quantity":0,
+        "category":"street"
     },
     {
         "id":"1out",
@@ -59,7 +65,9 @@
         "img": "../assets/img/Stybba6000mAh.png",
         "actualStock":5,
         "withdrawnStock":0,
-        "quantity":0 
+        "quantity":0 ,
+        "category":"outdoor"
+
     },
     {
         "id":"2out",
@@ -68,7 +76,8 @@
         "img": "../assets/img/HERO10.png",
         "actualStock":10,
         "withdrawnStock":0,
-        "quantity":0 
+        "quantity":0,
+        "category":"outdoor"
     },
     {
         "id":  "3out",
@@ -77,7 +86,8 @@
         "img": "../assets/img/DJIMini2.png",
         "actualStock":10,
         "withdrawnStock":0,
-        "quantity":0 
+        "quantity":0,
+        "category":"outdoor"
     },
     {
         "id":"4out",
@@ -86,6 +96,7 @@
         "img": "../assets/img/droneDM107s.png",
         "actualStock":5,
         "withdrawnStock":0,
-        "quantity":0 
+        "quantity":0,
+        "category":"outdoor"
     }
 ]
