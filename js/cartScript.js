@@ -3,17 +3,11 @@
 let product;
 let price = parseInt(0);
 let ready = false;
-
 let cartItems = parseInt(0);
-let cartItems__fromLstorage = localStorage.getItem('cartItems');
-
 let cartProducts = [];
-let cartProducts__fromLstorage = localStorage.getItem('cartProducts');
-
 let totalPrice = parseInt(0);
-let totalPrice__fromLstorage = localStorage.getItem('totalPrice');
 
-/** FUNCIONES */
+/** funciones */
 
 /** funcion que checkea stock y busca que 'ready' sea true para continuar, o muestra un mensaje */
 
@@ -53,7 +47,7 @@ const cartAdd = () => {
     let cartProducts__toLstorage = localStorage.setItem('cartProducts', cartProducts__JSON);
     cartItems++;
     let cartItems__toLstorage = localStorage.setItem('cartItems', cartItems);
-    totalPrice = totalPrice + product.price;
+    totalPrice += product.price;
     let totalPrice__toLstorage = localStorage.setItem('totalPrice', totalPrice);
     console.log(cartProducts);
     console.log(`Cant. productos: ${cartItems}`);
@@ -146,12 +140,13 @@ const renderingProducts = () => {
             /** restauro stock del producto seleccionado y actualizo valores sus valores*/
             
             product = cartProducts.find(parameter => parameter.id === btnId);
-            product.actualStock = product.actualStock + product.withdrawnStock;
+            product.actualStock += product.withdrawnStock;
             product.withdrawnStock = 0;
-            totalPrice = totalPrice - product.price * product.quantity;
-            cartItems = cartItems - product.quantity;
+            totalPrice -= product.price * product.quantity;
+            cartItems -= product.quantity;
             product.quantity = 0;
-            console.log('Stock restaurado');
+            console.log('Stock restaurado de:');
+            console.log(product);
             console.log(cartProducts);
             console.log(`Cant. productos: ${cartItems}`);
             console.log(`Total compra: ${totalPrice}`);
@@ -165,11 +160,7 @@ const renderingProducts = () => {
             /** actualizo el modal */
             
             notif ();
-            if(cartProducts.length === 0) {
-                eraseModal();
-            } else {
-                renderingProducts()
-            }
+            (cartProducts.length === 0) ? eraseModal() : renderingProducts();
 
             /**actualizo LS */
 
@@ -202,12 +193,11 @@ function checkOut () {
     eraseModal();
 }
 
-const steps = ['1', '2', '3']
-const queue = Swal.mixin({
+checkOutBtn.addEventListener('click', () => {
+    const steps = ['1', '2', '3']
+    const queue = Swal.mixin({
     progressSteps: steps,
 })
-
-checkOutBtn.addEventListener('click', () => {
     Swal.fire({
         allowOutsideClick: false,
         icon: 'question',
@@ -248,7 +238,7 @@ checkOutBtn.addEventListener('click', () => {
             })
             await Queue.fire({
                 allowOutsideClick: false,
-                type: 'input',
+                input: 'text',
                 title: 'Paso dos',
                 text: 'Ingrese su dirección de envío',
                 currentProgressStep: 1,
@@ -262,7 +252,7 @@ checkOutBtn.addEventListener('click', () => {
             })
             await Queue.fire({
                 allowOutsideClick: false,
-                type: 'input',
+                input: 'text',
                 title: 'Paso tres',
                 text: 'Ingrese su correo electrónico',
                 currentProgressStep: 2,
@@ -339,25 +329,32 @@ emptyCartBtn.addEventListener('click', () => {
 
             /** (restauro stock de los productos seleccionados y reinicio variables + LocalStorage) */
         
-            cartProducts.forEach(() => {
-                this.actualStock = this.actualStock + this.withdrawnStock;
-                this.withdrawnStock = 0;
-                this.quantity = 0;
-                console.log(`Stock reordenado`);
+            cartProducts.forEach(obj => {
+                obj.actualStock += obj.withdrawnStock;
+                obj.withdrawnStock = 0;
+                obj.quantity = 0;
+                console.log('Stock reordenado de:');
+                console.log(obj);
             })
             
             /**salida de la compra luego de devolver el stock a los prod correspondientes */
-        
+
             checkOut()
         }
     });
 })
 
+/** fin de funciones */
+
 
 /** LOCAL STORAGE CHECK */
 
+let cartProducts__fromLstorage = localStorage.getItem('cartProducts');
+const cartItems__fromLstorage = localStorage.getItem('cartItems');
+const totalPrice__fromLstorage = localStorage.getItem('totalPrice');
+
 if (cartItems__fromLstorage !== null) {
-    cartItems = JSON.parse(cartItems__fromLstorage);
+    cartItems = cartItems__fromLstorage;
     console.log(`Cant. Productos: ${cartItems}`);
     notif();
 }
